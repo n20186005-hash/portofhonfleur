@@ -68,6 +68,7 @@
     "toast_message": "Blog-Funktion reserviert: Inhaltssystem wird später verbunden."
   },
   "footer": {
+    "copyright": "© {{year}} Port of Honfleur Guide. Alle Rechte vorbehalten.",
     "built_as": "Als statische Panorama-Seite erstellt.",
     "rights": "Alle Rechte vorbehalten."
   }

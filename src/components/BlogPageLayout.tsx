@@ -101,7 +101,7 @@ export default function BlogPageLayout({
 
         <footer className="mt-16 border-t border-border/70 pt-10 text-center">
           <div className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} Port of Honfleur Guide · {t("footer.built_as")}
+            {t("footer.copyright", { year: new Date().getFullYear() })}
           </div>
         </footer>
       </div>

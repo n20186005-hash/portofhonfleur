@@ -90,6 +90,7 @@
     "toast_message": "博客功能开发中：后续可接入内容系统。"
   },
   "footer": {
+    "copyright": "© {{year}} 翁弗勒尔港指南 · 版权所有",
     "built_as": "Built as a static scenic page.",
     "rights": "All rights reserved."
   },

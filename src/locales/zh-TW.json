@@ -68,6 +68,7 @@
     "toast_message": "部落格功能預留中：後續可接入內容系統。"
   },
   "footer": {
+    "copyright": "© {{year}} 翁弗勒爾港指南 · 版權所有",
     "built_as": "Built as a static scenic page.",
     "rights": "All rights reserved."
   },

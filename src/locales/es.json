@@ -68,6 +68,7 @@
     "toast_message": "Funcionalidad de blog reservada: el sistema de contenido se conectará más adelante."
   },
   "footer": {
+    "copyright": "© {{year}} Guía del Puerto de Honfleur. Todos los derechos reservados.",
     "built_as": "Construido como una página panorámica estática.",
     "rights": "Todos los derechos reservados."
   },

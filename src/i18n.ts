@@ -27,8 +27,12 @@ i18n
     },
     fallbackLng: "en",
     supportedLngs: ["en", "fr", "es", "de", "ja", "ko", "zh-CN", "zh-TW"],
+    debug: import.meta.env.DEV,
     interpolation: {
       escapeValue: false,
+    },
+    react: {
+      useSuspense: false,
     },
     detection: {
       order: ["localStorage", "cookie", "navigator", "htmlTag"],

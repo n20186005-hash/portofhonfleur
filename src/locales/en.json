@@ -1,1 +1,150 @@
-{}
+{
+  "nav": {
+    "overview": "Overview",
+    "photos": "Photos",
+    "reviews": "Reviews",
+    "map": "Map",
+    "blog": "Blog"
+  },
+  "hero": {
+    "title": "A Reflective Harbor, Unforgettable Honfleur",
+    "description": "Port of Honfleur is located at the edge of the old town on the Normandy coast, just a few minutes' walk from the Vieux Bassin, cafes, and half-timbered buildings. See sailboats and docks by day, reflections and lights by evening—a place where every snap looks like a postcard.",
+    "cta_map": "Location",
+    "cta_photos": "Photos",
+    "cta_blog": "Blog",
+    "google_maps": "Open Google Maps",
+    "reviews_count": "{{count}} Google Reviews"
+  },
+  "facts": {
+    "title": "QUICK FACTS",
+    "address": "Address",
+    "hours": "Opening Hours",
+    "hours_value": "24 Hours Open",
+    "phone": "Phone",
+    "plus_code_desc": "Short code for positioning, suitable for quick retrieval in navigation apps.",
+    "view_more": "Full Reviews & More Photos"
+  },
+  "photos": {
+    "kicker": "PHOTO COLLAGE",
+    "title": "Photo Collage: Capture the Port",
+    "desc": "We prioritize real photos from Google Maps and public travel info to create a 'poster-style' gallery.",
+    "source": "Source: {{tag}}",
+    "alt_sailboats": "Sailboats and buildings at Vieux Bassin",
+    "alt_quay": "Quay and Carousel (Hotel de Ville)",
+    "alt_aerial": "Aerial view of Honfleur Old Port",
+    "alt_locks": "Aerial view of harbor locks and channel"
+  },
+  "reviews": {
+    "kicker": "VOICE & IMPRESSION",
+    "title": "Reviews & Experience: Shared Feelings",
+    "desc": "We have retrieved the rating and number of reviews from Google Maps. Due to limitations, we provide verified info and direct links here.",
+    "rating_title": "Rating",
+    "rating_desc": "Rating and review count from Google Maps.",
+    "count_title": "Reviews Count",
+    "count_desc": "A high number of reviews means you can see photos and suggestions from many visitors across seasons.",
+    "cta_title": "Want to see specific reviews?",
+    "cta_desc": "We provide direct links to ensure you see the latest and complete real reviews.",
+    "cta_button": "Open Google Maps Reviews",
+    "reviews_list": [
+      {
+        "author": "Gillian",
+        "role": "Local Guide · 361 reviews · 1,295 photos",
+        "rating": "5.0",
+        "date": "4 months ago",
+        "content": "Such a delightful town. So pretty with interesting buildings round the marina. Full of restaurants, cafes, art galleries and of course soveigner shops. Saturday morning there is a market. An interesting wooden church is in the centrd. Well worth a visit.",
+        "visited": "Visited in October 2025"
+      },
+      {
+        "author": "simon parnell",
+        "role": "Local Guide · 55 reviews · 37 photos",
+        "rating": "5.0",
+        "date": "4 months ago",
+        "content": "This is an excellent place to visit. We were on a cruise so only had a day to visit, but it is a pretty place. Lots to do and visit, especially the wooden church (Eglise Sainte Catherine) and the Chappelle Notre Dame de Grace with it's bells. Plus e enjoyed oysters, whelks and king prawns with a drink relaxing looking over the Le Vieux Bassin.",
+        "visited": "Visited in November 2025"
+      }
+    ]
+  },
+  "map": {
+    "kicker": "LOCATION",
+    "title": "Map & Directions",
+    "desc": "Use the Google Maps embed code. You can also open the map in a new window for route planning and sharing.",
+    "tips_title": "Visiting Tips",
+    "tips_desc": "The old town of Honfleur is best explored on foot. It is recommended to park in the outer parking lots and walk along the harbor to Vieux Bassin.",
+    "golden_hour": "Golden Hour",
+    "golden_hour_desc": "Evening and blue hour: reflections, lights, and atmosphere are at their peak.",
+    "photo_spot": "Photo Spot",
+    "photo_spot_desc": "Low angles on the building side of the shore make it easier to capture 'water mirror' images.",
+    "route_plan": "Route Planning",
+    "route_plan_desc": "Click the button to open Google Maps for real-time navigation and traffic info.",
+    "cta_button": "Plan Route in Google Maps"
+  },
+  "blog": {
+    "kicker": "BLOG SPACE",
+    "title": "Blog",
+    "desc": "Travel guides, best photo spots, restaurant picks, seasonal recommendations, and more.",
+    "read_button": "Read"
+  },
+  "footer": {
+    "copyright": "© {{year}} Port of Honfleur Guide. All Rights Reserved.",
+    "built_as": "Built as a static scenic page.",
+    "rights": "All rights reserved."
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "last_updated": "Last Updated: {{date}}",
+    "overview": "Overview",
+    "overview_desc": "This page explains how this website handles information. This website is a static scenic introduction page, does not provide account registration, and does not require login.",
+    "collect": "What information we collect",
+    "collect_stats": "Access statistics (if enabled): Anonymous statistics that may be automatically provided by the hosting platform (e.g., page views).",
+    "collect_embed": "Embedded content: This website contains Google Maps embedded iframes. This embedded content may set cookies or collect usage data by third parties according to their policies.",
+    "use": "How we use information",
+    "use_desc": "Information is only used to improve page display and basic operation, and is not used for advertising targeting or sale.",
+    "third_party": "Third-party services",
+    "third_party_desc": "Google Maps is provided by Google. Its data collection and cookie policy are subject to Google's terms and privacy policy.",
+    "contact": "Contact Us",
+    "contact_desc": "If you have questions about privacy issues, please contact the technical support email provided in the page footer."
+  },
+  "terms": {
+    "title": "Terms of Service",
+    "last_updated": "Last Updated: {{date}}",
+    "use_terms": "Use Terms",
+    "use_terms_desc": "By accessing this website, you agree to these basic terms of service. This website is for informational and travel reference purposes only.",
+    "content": "Content Ownership",
+    "content_desc": "The photos on this website come from public sources or the Google Maps location page, and their rights belong to the original authors.",
+    "disclaimer": "Disclaimer",
+    "disclaimer_desc": "While we strive to provide accurate information, we are not responsible for the absolute accuracy or timeliness of external data (such as Google Maps ratings, business hours).",
+    "links": "External Links",
+    "links_desc": "This website contains links to external sites (such as Google Maps). We are not responsible for the content or privacy practices of these sites.",
+    "changes": "Changes",
+    "changes_desc": "We reserve the right to update these terms at any time. Significant changes will be reflected in the 'Last Updated' date."
+  },
+  "cookies": {
+    "title": "Cookie Settings",
+    "last_updated": "Last Updated: {{date}}",
+    "what": "What are Cookies",
+    "what_desc": "Cookies are small text files stored on your device to help the website function or provide information to the site owners.",
+    "how": "How we use Cookies",
+    "how_desc": "As a static page, we do not set first-party cookies for tracking. However, third-party embedded content (such as Google Maps) may use cookies.",
+    "third_party": "Third-party Cookies",
+    "third_party_desc": "Google Maps may use cookies to remember your preferences and provide personalized map features. These are controlled by Google.",
+    "manage": "How to manage Cookies",
+    "manage_desc": "You can manage or delete cookies through your browser settings. Note that disabling cookies may affect the display or function of some website features (such as maps)."
+  },
+  "blogs_content": {
+    "post1": {
+      "title": "Millennium Harbor Record | Comprehensive In-depth Travel Guide to Port of Honfleur",
+      "description": "A panoramic, practical guide to understand Honfleur and explore it efficiently.",
+      "content": "Content coming soon."
+    },
+    "post2": {
+      "title": "Light & Shadow Handbook | Honfleur Harbor Photography Guide",
+      "description": "A practical photography route guide for sunrise, daytime, and the blue hour.",
+      "content": "Content coming soon."
+    },
+    "post3": {
+      "title": "Budget Practical Guide | Explore Honfleur Harbor with 100 Euros",
+      "description": "Save money without sacrificing the experience: transport, food, and free spots.",
+      "content": "Content coming soon."
+    }
+  }
+}

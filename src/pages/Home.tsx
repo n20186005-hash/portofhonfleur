@@ -76,6 +76,9 @@ export default function Home() {
     [t]
   );
 
+  const reviewsListRaw = t("reviews.reviews_list", { returnObjects: true, defaultValue: [] as any }) as unknown;
+  const reviewsList = Array.isArray(reviewsListRaw) ? reviewsListRaw : [];
+
   return (
     <div className="min-h-screen bg-background text-foreground grain">
       <Helmet>
@@ -359,7 +362,7 @@ export default function Home() {
           </div>
 
           <div className="mt-8 grid gap-5 md:grid-cols-2">
-            {(t("reviews.reviews_list", { returnObjects: true }) as any[]).map((review, idx) => (
+            {reviewsList.map((review: any, idx: number) => (
               <Card key={idx} className="paper-shadow border-border/70 bg-background/70 p-5">
                 <div className="flex items-start gap-3">
                   <div className="mt-0.5 rounded-xl border border-border/70 bg-secondary/60 p-3">
@@ -520,7 +523,7 @@ export default function Home() {
 
             <div className="max-w-3xl text-sm text-muted-foreground">{FOOTER_SUPPORT_TEXT}</div>
             <div className="text-xs text-muted-foreground">
-              © {new Date().getFullYear()} Port of Honfleur Guide · {t("footer.built_as")}
+              {t("footer.copyright", { year: new Date().getFullYear() })}
             </div>
           </div>
         </div>
