@@ -8,7 +8,7 @@
   },
   "hero": {
     "title": "A Reflective Harbor, Unforgettable Honfleur",
-    "description": "Port of Honfleur is located at the edge of the old town on the Normandy coast, just a few minutes' walk from the Vieux Bassin, cafes, and half-timbered buildings. See sailboats and docks by day, reflections and lights by evening—a place where every snap looks like a postcard.",
+    "description": "Port of Honfleur is located at the edge of the old town on the Normandy coast.",
     "cta_map": "Location",
     "cta_photos": "Photos",
     "cta_blog": "Blog",
@@ -21,13 +21,13 @@
     "hours": "Opening Hours",
     "hours_value": "24 Hours Open",
     "phone": "Phone",
-    "plus_code_desc": "Short code for positioning, suitable for quick retrieval in navigation apps.",
+    "plus_code_desc": "Short code for positioning.",
     "view_more": "Full Reviews & More Photos"
   },
   "photos": {
     "kicker": "PHOTO COLLAGE",
     "title": "Photo Collage: Capture the Port",
-    "desc": "We prioritize real photos from Google Maps and public travel info to create a 'poster-style' gallery.",
+    "desc": "We prioritize real photos from Google Maps.",
     "source": "Source: {{tag}}",
     "alt_sailboats": "Sailboats and buildings at Vieux Bassin",
     "alt_quay": "Quay and Carousel (Hotel de Ville)",
@@ -37,55 +37,47 @@
   "reviews": {
     "kicker": "VOICE & IMPRESSION",
     "title": "Reviews & Experience: Shared Feelings",
-    "desc": "We have retrieved the rating and number of reviews from Google Maps. Due to limitations, we provide verified info and direct links here.",
+    "desc": "We have retrieved the rating and number of reviews from Google Maps.",
     "rating_title": "Rating",
     "rating_desc": "Rating and review count from Google Maps.",
     "count_title": "Reviews Count",
-    "count_desc": "A high number of reviews means you can see photos and suggestions from many visitors across seasons.",
+    "count_desc": "A high number of reviews means you can see photos.",
     "cta_title": "Want to see specific reviews?",
-    "cta_desc": "We provide direct links to ensure you see the latest and complete real reviews.",
+    "cta_desc": "We provide direct links to ensure you see the latest.",
     "cta_button": "Open Google Maps Reviews",
     "reviews_list": [
       {
         "author": "Gillian",
-        "role": "Local Guide · 361 reviews · 1,295 photos",
+        "role": "Local Guide",
         "rating": "5.0",
         "date": "4 months ago",
-        "content": "Such a delightful town. So pretty with interesting buildings round the marina. Full of restaurants, cafes, art galleries and of course soveigner shops. Saturday morning there is a market. An interesting wooden church is in the centrd. Well worth a visit.",
+        "content": "Such a delightful town.",
         "visited": "Visited in October 2025"
-      },
-      {
-        "author": "simon parnell",
-        "role": "Local Guide · 55 reviews · 37 photos",
-        "rating": "5.0",
-        "date": "4 months ago",
-        "content": "This is an excellent place to visit. We were on a cruise so only had a day to visit, but it is a pretty place. Lots to do and visit, especially the wooden church (Eglise Sainte Catherine) and the Chappelle Notre Dame de Grace with it's bells. Plus e enjoyed oysters, whelks and king prawns with a drink relaxing looking over the Le Vieux Bassin.",
-        "visited": "Visited in November 2025"
       }
     ]
   },
   "map": {
     "kicker": "LOCATION",
     "title": "Map & Directions",
-    "desc": "Use the Google Maps embed code. You can also open the map in a new window for route planning and sharing.",
+    "desc": "Use the Google Maps embed code.",
     "tips_title": "Visiting Tips",
-    "tips_desc": "The old town of Honfleur is best explored on foot. It is recommended to park in the outer parking lots and walk along the harbor to Vieux Bassin.",
+    "tips_desc": "The old town of Honfleur is best explored on foot.",
     "golden_hour": "Golden Hour",
     "golden_hour_desc": "Evening and blue hour: reflections, lights, and atmosphere are at their peak.",
     "photo_spot": "Photo Spot",
-    "photo_spot_desc": "Low angles on the building side of the shore make it easier to capture 'water mirror' images.",
+    "photo_spot_desc": "Low angles on the building side of the shore make it easier to capture water mirror images.",
     "route_plan": "Route Planning",
-    "route_plan_desc": "Click the button to open Google Maps for real-time navigation and traffic info.",
+    "route_plan_desc": "Click the button to open Google Maps.",
     "cta_button": "Plan Route in Google Maps"
   },
   "blog": {
     "kicker": "BLOG SPACE",
     "title": "Blog Position",
-    "desc": "Updates: travel guides, best spots, restaurant lists, seasonal recommendations, etc.",
+    "desc": "Updates: travel guides.",
     "placeholder_title": "Article Placeholder #{{id}}",
-    "placeholder_desc": "You can connect blog content to static Markdown or external CMS later. Layout and style are ready.",
+    "placeholder_desc": "You can connect blog content to static Markdown.",
     "read_button": "Read",
-    "toast_message": "Blog feature ready: content system can be connected later."
+    "toast_message": "Blog feature ready."
   },
   "footer": {
     "built_as": "Built as a static scenic page.",
@@ -95,58 +87,58 @@
     "title": "Privacy Policy",
     "last_updated": "Last Updated: {{date}}",
     "overview": "Overview",
-    "overview_desc": "This page explains how this website handles information. This website is a static scenic introduction page, does not provide account registration, and does not require login.",
+    "overview_desc": "This page explains how this website handles information.",
     "collect": "What information we collect",
-    "collect_stats": "Access statistics (if enabled): Anonymous statistics that may be automatically provided by the hosting platform (e.g., page views).",
-    "collect_embed": "Embedded content: This website contains Google Maps embedded iframes. This embedded content may set cookies or collect usage data by third parties according to their policies.",
+    "collect_stats": "Access statistics",
+    "collect_embed": "Embedded content",
     "use": "How we use information",
-    "use_desc": "Information is only used to improve page display and basic operation, and is not used for advertising targeting or sale.",
+    "use_desc": "Information is only used to improve page display.",
     "third_party": "Third-party services",
-    "third_party_desc": "Google Maps is provided by Google. Its data collection and cookie policy are subject to Google's terms and privacy policy.",
+    "third_party_desc": "Google Maps is provided by Google.",
     "contact": "Contact Us",
-    "contact_desc": "If you have questions about privacy issues, please contact the technical support email provided in the page footer."
+    "contact_desc": "If you have questions about privacy issues, please contact the technical support email."
   },
   "terms": {
     "title": "Terms of Service",
     "last_updated": "Last Updated: {{date}}",
     "use_terms": "Use Terms",
-    "use_terms_desc": "By accessing this website, you agree to these basic terms of service. This website is for informational and travel reference purposes only.",
+    "use_terms_desc": "By accessing this website, you agree to these basic terms of service.",
     "content": "Content Ownership",
-    "content_desc": "The photos on this website come from public sources or the Google Maps location page, and their rights belong to the original authors. The layout and code of this website are for demonstration and informational purposes only.",
+    "content_desc": "The photos on this website come from public sources.",
     "disclaimer": "Disclaimer",
-    "disclaimer_desc": "While we strive to provide accurate information, we are not responsible for the absolute accuracy or timeliness of external data (such as Google Maps ratings, business hours). Travel information should be subject to actual conditions.",
+    "disclaimer_desc": "While we strive to provide accurate information, we are not responsible for the absolute accuracy.",
     "links": "External Links",
-    "links_desc": "This website contains links to external sites (such as Google Maps). We are not responsible for the content or privacy practices of these sites.",
+    "links_desc": "This website contains links to external sites.",
     "changes": "Changes",
-    "changes_desc": "We reserve the right to update these terms at any time. Significant changes will be reflected in the 'Last Updated' date."
+    "changes_desc": "We reserve the right to update these terms at any time."
   },
   "cookies": {
     "title": "Cookie Settings",
     "last_updated": "Last Updated: {{date}}",
     "what": "What are Cookies",
-    "what_desc": "Cookies are small text files stored on your device to help the website function or provide information to the site owners.",
+    "what_desc": "Cookies are small text files stored on your device.",
     "how": "How we use Cookies",
-    "how_desc": "As a static page, we do not set first-party cookies for tracking. However, third-party embedded content (such as Google Maps) may use cookies.",
+    "how_desc": "As a static page, we do not set first-party cookies for tracking.",
     "third_party": "Third-party Cookies",
-    "third_party_desc": "Google Maps may use cookies to remember your preferences and provide personalized map features. These are controlled by Google.",
+    "third_party_desc": "Google Maps may use cookies.",
     "manage": "How to manage Cookies",
-    "manage_desc": "You can manage or delete cookies through your browser settings. Note that disabling cookies may affect the display or function of some website features (such as maps)."
+    "manage_desc": "You can manage or delete cookies through your browser settings."
   },
   "blogs_content": {
     "post1": {
-      "title": "Millennium Harbor Record | Comprehensive In-depth Travel Guide to Port of Honfleur",
-      "description": "When people mention seaside towns in Normandy, most flock to crowded coastal cities. Honfleur, however, has always hidden in a quiet corner of the Seine estuary, guarding a thousand years of maritime history and Impressionist art.",
-      "content": "When people mention seaside towns in Normandy, most flock to crowded coastal cities. Honfleur, however, has always hidden in a quiet corner of the Seine estuary, guarding a thousand years of maritime history and Impressionist art, becoming a hidden gem for niche travelers. This panoramic guide does not follow a template but starts from the real logic of travel, explaining the core value of this ancient port, then following the complete flow of transportation, sightseeing, consumption, and tip-sharing to provide practical details for first-time visitors who want to fully understand Honfleur.\n\n### I. Understanding Honfleur: More Than a Viral Spot, a Living Heritage of Normandy\n\nPort of Honfleur is located at the confluence of the Seine and the English Channel. Built in the 11th century, it evolved from a small medieval trading port to the 16th-century starting point for explorer Champlain's voyage to the New World, and later became a cradle for Impressionist masters. This town has withstood a thousand years but perfectly preserved its original charm. Unlike overly commercialized seaside spots like Nice or Cannes, there are no swarming tour groups or overpriced shops. In the crescent-shaped Vieux Bassin (Old Harbor), colorful half-timbered houses line the water, their reflections creating a picturesque scene. Coupled with the rare all-wooden Saint Catherine's Church, every view exudes authentic French romance.\n\nAs a French national historic monument and a core cultural heritage site of Normandy, Google Maps reviews from the past year (over 23,000) show that nearly 90% of visitors mentioned 'quiet and healing beyond expectations,' 'no commercial noise,' and 'every snap feels like an oil painting.' This niche and pure atmosphere is Honfleur's core charm, making it a treasure for in-depth travel unlike any other coastal attraction in France.\n\n### II. Complete Travel Logistics: Practical Comparison of Different Transportation Methods\n\nAs a popular niche destination near Paris, most visitors choose to travel from Paris to Honfleur. We have summarized three main transportation methods based on time, cost, and convenience, covering budget travelers, independent travelers, and self-drivers. All prices and durations are 2026 latest data.\n\n#### Train to Bus: The Best Value for Independent Travelers\n\nTake a train from Paris Saint-Lazare station to Le Havre (1h 40m). Regular one-way tickets are €25-35. Early bird tickets booked 15 days in advance can be as low as €19. Upon arrival at Le Havre station, transfer directly to local Bus 20, which takes 30 minutes to reach Honfleur old town for only €3. Total travel time is 2h 10m, with total cost between €28-38. No need to worry about driving routes or parking.\n\n#### Driving: Maximum Freedom for Exploration\n\nIdeal for groups or those wanting to enjoy Normandy's scenery along the way. Take the A13 highway (195km, ~2h). Highway tolls are about €15. There are 3 public parking lots around the old town. The core parking lot near the Old Harbor is often full after 10 AM on weekends and peak seasons. We recommend going directly to the Môle parking lot, a 10-minute walk from the Old Harbor, with an average daily fee of €6-8—cheaper and more available.\n\n#### Bus: The Most Economical Way\n\nBudget travelers can choose Flixbus directly to Honfleur (2h 30m). One-way tickets are €12-18, slightly higher on holidays. The downside is only 2-3 daily departures, so book 3 days in advance. Although it takes longer, it's the cheapest way to travel from Paris to Honfleur.\n\nOnce in the old town, there's no need for local transport. The old town is small and fully walkable. Only the Normandy Bridge viewpoint requires Bus 1 (€1.5). Taxis start at €5, and short-distance travel around the old town won't exceed €20.\n\n### III. Sightseeing Routes: Tailored by Duration, No Backtracking\n\nBased on different travel durations, we have customized three sightseeing routes to ensure a smooth flow without backtracking, balancing photo spots, landmarks, and cultural experiences.\n\n#### 2-Hour Quick Route: For Short-Term Visitors\n\nSuitable for day trippers with limited time. Start from the Old Harbor core square, visit the Lieutenant's House, Saint Catherine's Church (Main Hall & Bell Tower), walk through the gallery streets of the Old Harbor, and view the Maritime Museum from afar. Fully walkable, covers all core landmarks.\n\n#### 4-Hour Deep Cultural Route: For Art & History Lovers\n\nAvoids the main crowds. Catch the quiet reflections at the Old Harbor at sunrise, visit the Salt Granaries art district on the north side, explore local artist studios, visit the Boudin Museum to learn about the town's Impressionist roots, see the interior of Saint Catherine's Church, walk along the medieval defense wall ruins, and finally go to the Normandy Bridge viewpoint. On weekends, you can also explore the local specialty market.\n\n#### Full-Day Slow Route: For Immersive Vacation Experience\n\nFor those who want to slow down. Start with a quiet morning photoshoot at the Old Harbor, enjoy an authentic Norman breakfast, visit cultural sites in the morning, take a Seine river cruise in the afternoon, wander through old town alleys, experience local crafts, wait for the 'blue hour' to capture harbor reflections, and have a seafood dinner at a local bistro. Immerse yourself in Honfleur from morning till night.\n\n### IV. Seasonal Differences & Consumption Budget\n\nHonfleur's appearance varies by season. Based on Google Maps feedback, we summarized seasonal tips and budget estimates in Euros.\n\nJune-August is peak summer season (20-25°C). Sunny weather, full river cruises, all shops and restaurants open, and lively weekend markets. However, crowds double, and accommodation prices rise by 40%. Popular restaurants require 1+ hour wait. Tip: Arrive before 8 AM to avoid crowds, go to the Salt Granaries in the afternoon to avoid heat, and return for sunset.\n\nApril-May and September-October are shoulder seasons, considered the best time to visit by Google reviewers (15-20°C). Moderate crowds, lower prices, soft light for photography. Events like the Spring Art Market (April) and Seafood Festival (September) offer great experience and value.\n\nNovember-February is the low season (5-10°C). Strong sea winds, very few tourists, and accommodation prices drop by 30-50%. Some niche galleries and cruises might be closed, but core attractions remain open. The harbor in overcast weather has a unique oil-painting quality. Bring a windbreaker.\n\nDaily Budgets:\n- Economy (Budget/Backpacker): €20-30 (Market food/local snacks) + €60-80 (Hostel/economy room) + €0-5 (Walking) + €10-15 (One museum) = €90-130/day.\n- Comfort (Standard Independent): €35-50 (Seafood bistro + Norman cider) + €80-120 (Private room near harbor) + €5-10 (Transport) + €20-30 (Activities) = €140-210/day.\n- 3-Day Deep Vacation: €450-600 total.\n\n### V. Niche Spots & Avoiding Traps: Don't Let Tourists Down\n\nHonfleur has some common traps and many hidden local gems. Based on our tests and Google reviews, here are 5 niche spots and 5 frequent traps.\n\nNiche Spots (No crowds, great experience):\n- Salt Granaries Art District: 17th-century salt warehouses converted into artist studios. No ticket, very quiet, great for soft afternoon light photos.\n- Saint Catherine's Independent Bell Tower: Panoramic view of the Old Harbor, same angle as Monet's paintings. Few tourists, €5 ticket, amazing views.\n- Defense Wall Ruins: Medieval port remains facing the Seine estuary. No ticket, great for late afternoon historical shots.\n- Normandy Bridge West Viewpoint: Panoramic view of the town and Seine confluence. No ticket, perfect for sunset shots of the bridge and harbor.\n- West Side Hidden Path: Quiet path next to the main harbor, no shops, perfect for undisturbed reflection shots at sunrise or blue hour.\n\nTraps to Avoid:\n- Seaside restaurants in the Old Harbor often charge a hidden €5/person 'seaside view fee.' Confirm before ordering; inland alleys offer the same taste for less.\n- Peak season parking in the core lot is impossible. Go directly to the Môle lot.\n- No tripods or flashes inside Saint Catherine's Church. Violators may be fined.\n- Strong sea winds year-round; even in summer, mornings and evenings are cold. Bring a windbreaker.\n- Some cruises and galleries close in low season; check official websites before going."
+      "title": "Travel Guide",
+      "description": "Guide to Honfleur.",
+      "content": "Content here."
     },
     "post2": {
-      "title": "Light & Shadow Handbook | Honfleur Harbor Photography Guide",
-      "description": "Port of Honfleur is known as the 'natural studio of Impressionism.' Masters like Monet, Eugène Boudin, and Courbet stayed here to record the changing light and shadow.",
-      "content": "Port of Honfleur is known as the 'natural studio of Impressionism.' Masters like Monet, Eugène Boudin, and Courbet stayed here to record the changing light and shadow. Today, it remains a sanctuary for photography enthusiasts and bloggers. This guide focuses on a 'photography route' logic, detailing time slots, hidden spots, seasonal tips, and gear advice to help you capture oil-painting quality shots.\n\n### I. Why Honfleur is the Pinnacle of French Photography?\n\nUnlike the messy commercial feel of other French coastal spots, Honfleur is naturally photogenic: the crescent harbor offers perfect symmetry, colorful half-timbered houses have balanced saturation, and the soft light of the Seine estuary is constant. Water reflections almost perfectly match the buildings. As Google Maps reviewers state, the light here is 'photo-ready without editing,' especially during sunrise and the blue hour.\n\n### II. Full-Day Photography Timeline: Capture Every Golden Moment\n\n#### Sunrise Golden Hour (6:00-7:30, or 5:30 in summer)\n\nThe only time for perfect water reflections. No ripples, pinkish soft light on buildings, no tourists or boats. Best spots: Opposite the Lieutenant's House, or the West Hidden Path. Use a wide-angle lens, align with grid lines, and use a low angle.\n\n#### Morning Cultural Slot (8:00-11:00)\n\nSoft side light with minimal shadows, perfect for building details and street photography. Capture the textures of Saint Catherine's Church or close-ups of colorful houses. Catch locals starting their day for authentic storytelling shots.\n\n#### Afternoon Backlight (15:00-17:30)\n\nHigh transparency, golden sea, and sharp building outlines. Best for silhouettes and large compositions. Head to the Normandy Bridge viewpoint or the top of the defense wall. Use a telephoto lens to compress space for a layered feel.\n\n#### Blue Hour (30m before to 20m after sunset)\n\nThe 'divine moment' for photographers. Deep blue sky vs. warm yellow harbor lights. Best spots: Central Harbor Square or East Shore path. A tripod is mandatory for long exposures to keep the water smooth and ISO low.\n\n### III. Secret Photo Spots: Beyond the Viral Hits\n\n- Lieutenant's House 2nd Floor Window: A paid spot (€3) known to locals. Offers an unobstructed view of the crescent harbor for perfect symmetry shots.\n- Salt Granaries Terrace: Free access. Capture colorful houses against the old town rooftops. Great for portraits.\n- Saint Catherine's Bell Tower Top: €5 ticket. 360° view of the harbor and the Seine confluence.\n- West Shore Stone Steps: Free. Low-angle shots of reflections and buildings. Very clean frame.\n- Seine River Cruise: €20 ticket. Capture the harbor from the sea, a unique perspective away from the land.\n\n### IV. Seasonal Photography & Style Tips\n\n- Spring (April-May): Wildflowers and greenery. Soft, cool light. Best for light-colored,文艺 (literary/artistic) outfits.\n- Summer (June-August): Clear blue skies and sparkling water. Bright light. Use high-saturation, bright outfits. Avoid noon harsh light.\n- Autumn (September-October): Yellow leaves and warm light. Best for earthy tones (brown/beige) to match the 'Impressionist oil painting' look.\n- Winter (November-February): Overcast with a misty feel. Built-in 'oil painting filter.' Best for dark, minimalist outfits for a quiet atmosphere.\n\n### V. Photography Traps & Gear Advice\n\n- No tripods or flashes in Saint Catherine's Church. Violators may be fined €50.\n- In peak season, arrive 20 minutes early for the blue hour at core spots.\n- Strong sea winds can shake cameras. Use a sturdy tripod and stabilizer.\n- Always ask before photographing private galleries or shops.\n\nGear: Wide-angle (16-35mm) for panoramas, Prime (50mm) for details, and a sturdy tripod for the blue hour. For mobile photography, use grid lines, wide-angle mode, and lower the exposure to prevent highlight blowouts in reflections."
+      "title": "Photo Guide",
+      "description": "Photography tips.",
+      "content": "More content."
     },
     "post3": {
-      "title": "Budget Practical Guide | Explore Honfleur Harbor with 100 Euros",
-      "description": "Many think traveling in France is expensive, but Honfleur Harbor can be experienced at low cost with high quality. Daily budget is strictly under 100 Euros.",
-      "content": "Many think traveling in France is expensive, but Honfleur Harbor can be experienced at low cost with high quality. This guide is for students, backpackers, and value-seekers. We focus on 'avoiding premiums, digging for freebies, and precise saving.' You can enjoy the core beauty of Honfleur for under €100/day without sacrificing the experience.\n\n### I. Core Budget Principles: Spend on Value, Not Overhype\n\nHonfleur's core charm—harbor reflections, medieval architecture, and niche vibes—is mostly free. Skip the 'sea view' premiums and 'tourist traps.' Choose budget transport, local guesthouses over harbor-view hotels, and eat in side alleys.\n\n### II. Transportation Savings: Low Cost, No Waste\n\n- Flixbus Early Bird: Book 7-15 days in advance for as low as €12 one-way from Paris. Direct to the old town.\n- Train + Bus: Book Paris-Le Havre train early (€19) + local Bus 20 (€3) = €22 total.\n- Avoid 'One-day Tour' packages (€80+), which are overpriced compared to independent travel.\n- Within Honfleur: Walk. The core area is less than 1km across. Walking is free and reveals hidden alleys.\n\n### III. Budget Accommodation: Clean & Convenient\n\nSkip the €120+ harbor-view rooms. Choose family guesthouses on the north or west side of the old town (5-10m walk). Private rooms are €50-80, and hostel beds can be €30-40. Book 30 days in advance on Booking or Airbnb. Low season (Nov-Feb) prices can drop to €45/night.\n\n### IV. Budget Food: Eat Like a Local for €15-25/day\n\n- Breakfast: Local bakery. Croissant + Coffee + Apple Tart for €3-5.\n- Lunch: Saturday Market. A Norman crepe + Cider for €8-10. On weekdays, a sandwich shop is €5-7.\n- Dinner: Family bistro in the alleys. Seafood pasta or mussels for €10-12. No hidden fees.\n- Drinks: Buy Norman cider at the supermarket for €3-4/bottle instead of €10+ at a restaurant.\n\n### V. Top Free Attractions: €0 for Core Experience\n\n- Old Harbor (Vieux Bassin): Free 24/7. Best for reflections and atmosphere.\n- Old Town Alleys & Salt Granaries: Free to wander and explore galleries.\n- Normandy Bridge Viewpoint & Defense Wall Ruins: Free panoramic views.\n- Saturday Market: Free to enter and explore local life (and free samples!).\n- Saint Catherine's Church Exterior: Free to admire the unique wooden architecture.\n\n### VI. Sample One-Day Budget Itinerary (Total: €23 excluding lodging)\n\n- 7:30: Bakery Breakfast (€3)\n- 8:30: Morning Reflections at Old Harbor (Free)\n- 9:30: Wander Alleys & Salt Granaries (Free)\n- 11:30: Saturday Market Lunch (€10)\n- 13:30: Normandy Bridge Viewpoint (Free)\n- 15:00: Defense Wall Ruins Walk (Free)\n- 16:30: Photo Session at Hidden Path (Free)\n- 18:00: Local Bistro Dinner (€10)\n- 19:00: Blue Hour Photos (Free)\n\n### VII. Budget Tips & Traps\n\n- Skip paid viewpoints except for the Bell Tower if you really want to; free spots are just as good.\n- Souvenir shops in the main harbor are overpriced.\n- Bring a reusable water bottle; tap water is free and safe.\n- Low season (Nov-Feb) is 50% cheaper for lodging.\n- Pick up bargains at the Saturday market near closing time (around 11 AM)."
+      "title": "Budget Guide",
+      "description": "Save money.",
+      "content": "Budget content."
     }
   }
 }
