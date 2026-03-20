@@ -8,6 +8,7 @@ import { FloatingSwitcher } from "@/components/FloatingSwitcher";
 import Home from "@/pages/Home";
 import Map from "@/pages/Map";
 import Photos from "@/pages/Photos";
+import Blog from "@/pages/Blog";
 import BlogDetail from "@/pages/BlogDetail";
 import PrivacyPolicy from "@/pages/PrivacyPolicy";
 import TermsOfService from "@/pages/TermsOfService";
@@ -23,6 +24,7 @@ function AppRouter() {
         <Route path="/cookies" component={CookieSettings} />
         <Route path="/map" component={Map} />
         <Route path="/photos" component={Photos} />
+        <Route path="/blog" component={Blog} />
         <Route path="/blog/:id" component={BlogDetail} />
         <Route path="/" component={Home} />
         <Route component={NotFound} />
