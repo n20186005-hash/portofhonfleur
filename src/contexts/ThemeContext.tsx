@@ -1,9 +1,10 @@
 import * as React from "react";
 
-type Theme = "light" | "dark";
+type Theme = "dark" | "light" | "system";
 
 interface ThemeContextType {
   theme: Theme;
+  setTheme: (theme: Theme) => void;
   toggleTheme: () => void;
 }
 
@@ -17,24 +18,47 @@ interface ThemeProviderProps {
 
 export function ThemeProvider({
   children,
-  defaultTheme = "light",
-  switchable = false,
-}: ThemeProviderProps) {
-  const [theme, setTheme] = React.useState<Theme>(defaultTheme);
+  defaultTheme,
+  storageKey = "vite-ui-theme",
+  ...props
+}: ThemeProviderProps & { storageKey?: string }) {
+  const [theme, setTheme] = React.useState<Theme>(
+    () => (localStorage.getItem(storageKey) as Theme) || defaultTheme || "system"
+  );
 
   React.useEffect(() => {
-    document.documentElement.classList.remove("light", "dark");
-    document.documentElement.classList.add(theme);
+    const root = window.document.documentElement;
+
+    root.classList.remove("light", "dark");
+
+    if (theme === "system") {
+      const systemTheme = window.matchMedia("(prefers-color-scheme: dark)")
+        .matches
+        ? "dark"
+        : "light";
+
+      root.classList.add(systemTheme);
+      return;
+    }
+
+    root.classList.add(theme);
   }, [theme]);
 
-  const toggleTheme = () => {
-    if (switchable) {
-      setTheme((prev) => (prev === "light" ? "dark" : "light"));
-    }
+  const value = {
+    theme,
+    setTheme: (theme: Theme) => {
+      localStorage.setItem(storageKey, theme);
+      setTheme(theme);
+    },
+    toggleTheme: () => {
+      const nextTheme = theme === "light" ? "dark" : "light";
+      localStorage.setItem(storageKey, nextTheme);
+      setTheme(nextTheme);
+    },
   };
 
   return (
-    <ThemeContext.Provider value={{ theme, toggleTheme }}>
+    <ThemeContext.Provider {...props} value={value}>
       {children}
     </ThemeContext.Provider>
   );

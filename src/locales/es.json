@@ -1,0 +1,88 @@
+{
+  "nav": {
+    "overview": "Resumen",
+    "photos": "Fotos",
+    "reviews": "Opiniones",
+    "map": "Mapa",
+    "blog": "Blog"
+  },
+  "hero": {
+    "title": "Un puerto de reflejos, la inolvidable Honfleur",
+    "description": "El Puerto de Honfleur se encuentra en el borde del casco antiguo en la costa de Normandía, a pocos minutos a pie del Vieux Bassin, cafés y casas de madera. Vea barcos de vela y muelles de día, reflejos y luces de noche: un lugar donde cada foto parece una postal.",
+    "cta_map": "Ubicación",
+    "cta_photos": "Fotos",
+    "cta_blog": "Blog",
+    "google_maps": "Abrir Google Maps",
+    "reviews_count": "{{count}} opiniones de Google"
+  },
+  "facts": {
+    "title": "DATOS RÁPIDOS",
+    "address": "Dirección",
+    "hours": "Horario",
+    "hours_value": "Abierto 24 horas",
+    "phone": "Teléfono",
+    "plus_code_desc": "Código corto para ubicación, ideal para una búsqueda rápida en aplicaciones de navegación.",
+    "view_more": "Opiniones completas y más fotos"
+  },
+  "photos": {
+    "kicker": "COLLAGE DE FOTOS",
+    "title": "Collage de Fotos: Captura el Puerto",
+    "desc": "Priorizamos fotos reales de Google Maps e información pública para crear una galería estilo 'póster'.",
+    "source": "Fuente: {{tag}}"
+  },
+  "reviews": {
+    "kicker": "VOZ E IMPRESIÓN",
+    "title": "Opiniones y Experiencia: Sentimientos Compartidos",
+    "desc": "Hemos recuperado la calificación y el número de opiniones de Google Maps. Debido a limitaciones, proporcionamos información verificada y enlaces directos aquí.",
+    "rating_title": "Calificación",
+    "rating_desc": "Calificación y número de opiniones de Google Maps.",
+    "count_title": "Número de opiniones",
+    "count_desc": "Un alto número de opiniones significa que puedes ver fotos y sugerencias de muchos visitantes a lo largo de las estaciones.",
+    "cta_title": "¿Quieres ver opiniones específicas?",
+    "cta_desc": "Proporcionamos enlaces directos para asegurar que veas las opiniones reales más recientes y completas.",
+    "cta_button": "Abrir opiniones de Google Maps",
+    "placeholder_title": "Extracto de opinión",
+    "placeholder_desc": "Debido a limitaciones técnicas, aún no podemos extraer textos de opiniones específicos. Si deseas mostrar opiniones precisas, pégalas aquí."
+  },
+  "map": {
+    "kicker": "UBICACIÓN",
+    "title": "Mapa e Itinerario",
+    "desc": "Utiliza el código de inserción de Google Maps. También puedes abrir el mapa en una ventana nueva para planificar tu ruta.",
+    "tips_title": "Consejos de visita",
+    "tips_desc": "El casco antiguo de Honfleur se explora mejor a pie. Se recomienda aparcar en los parkings exteriores y caminar por el puerto hasta el Vieux Bassin.",
+    "golden_hour": "Hora Dorada",
+    "golden_hour_desc": "Por la noche y en la hora azul: los reflejos, las luces y el ambiente están en su apogeo.",
+    "photo_spot": "Punto de Foto",
+    "photo_spot_desc": "Los ángulos bajos del lado de los edificios permiten capturar mejor los reflejos en el agua.",
+    "route_plan": "Itinerario",
+    "route_plan_desc": "Haz clic en el botón para abrir Google Maps y obtener navegación en tiempo real.",
+    "cta_button": "Planificar ruta en Google Maps"
+  },
+  "blog": {
+    "kicker": "ESPACIO BLOG",
+    "title": "Posición Blog",
+    "desc": "Reservado para futuras actualizaciones: guías de viaje, mejores spots, listas de restaurantes, recomendaciones estacionales, etc.",
+    "placeholder_title": "Artículo Placeholder #{{id}}",
+    "placeholder_desc": "Puedes conectar el contenido del blog a un Markdown estático o a un CMS externo más tarde.",
+    "read_button": "Leer",
+    "toast_message": "Funcionalidad de blog reservada: el sistema de contenido se conectará más adelante."
+  },
+  "footer": {
+    "built_as": "Construido como una página panorámica estática.",
+    "rights": "Todos los derechos reservados."
+  },
+  "blogs_content": {
+    "post1": {
+      "title": "Millennium Harbor Record | Guía de viaje detallada del puerto de Honfleur",
+      "description": "Descubra el puerto de Honfleur a través de su historia y sus secretos mejor guardados."
+    },
+    "post2": {
+      "title": "Manual de luz y sombra | Guía de fotografía del puerto de Honfleur",
+      "description": "Capture la magia del puerto a través del lente de los maestros impresionistas."
+    },
+    "post3": {
+      "title": "Guía práctica de bajo presupuesto | Explore el puerto de Honfleur con 100 euros",
+      "description": "Disfrute de lo mejor de Honfleur sin gastar de más con nuestros consejos de expertos."
+    }
+  }
+}

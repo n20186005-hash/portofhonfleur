@@ -1,0 +1,74 @@
+{
+  "nav": {
+    "overview": "Übersicht",
+    "photos": "Fotos",
+    "reviews": "Bewertungen",
+    "map": "Karte",
+    "blog": "Blog"
+  },
+  "hero": {
+    "title": "Ein Hafen der Spiegelungen, das unvergessliche Honfleur",
+    "description": "Der Hafen von Honfleur liegt am Rande der Altstadt an der Küste der Normandie, nur wenige Gehminuten vom Vieux Bassin, Cafés und Fachwerkhäusern entfernt. Sehen Sie Segelboote und Docks am Tag, Spiegelungen und Lichter am Abend — ein Ort, an dem jeder Schnappschuss wie eine Postkarte aussieht.",
+    "cta_map": "Standort",
+    "cta_photos": "Fotos",
+    "cta_blog": "Blog",
+    "google_maps": "Google Maps öffnen",
+    "reviews_count": "{{count}} Google-Bewertungen"
+  },
+  "facts": {
+    "title": "SCHNELLE FAKTEN",
+    "address": "Adresse",
+    "hours": "Öffnungszeiten",
+    "hours_value": "24 Stunden geöffnet",
+    "phone": "Telefon",
+    "plus_code_desc": "Kurzcode für die Positionierung, ideal für eine schnelle Suche in Navigations-Apps.",
+    "view_more": "Vollständige Bewertungen und mehr Fotos"
+  },
+  "photos": {
+    "kicker": "FOTOKOLLAGE",
+    "title": "Fotocollage: Fangen Sie den Hafen ein",
+    "desc": "Wir priorisieren echte Fotos von Google Maps und öffentliche Reiseinfos, um eine Galerie im 'Poster-Stil' zu erstellen.",
+    "source": "Quelle: {{tag}}"
+  },
+  "reviews": {
+    "kicker": "STIMMEN & EINDRÜCKE",
+    "title": "Bewertungen & Erfahrung: Gemeinsame Gefühle",
+    "desc": "Wir have die Bewertung und die Anzahl der Rezensionen von Google Maps abgerufen. Aufgrund von Einschränkungen bieten wir hier verifizierte Infos und direkte Links an.",
+    "rating_title": "Bewertung",
+    "rating_desc": "Bewertung und Anzahl der Rezensionen von Google Maps.",
+    "count_title": "Anzahl der Bewertungen",
+    "count_desc": "Eine hohe Anzahl an Bewertungen bedeutet, dass Sie Fotos und Vorschläge von vielen Besuchern über die Jahreszeiten hinweg sehen können.",
+    "cta_title": "Möchten Sie spezifische Bewertungen sehen?",
+    "cta_desc": "Wir stellen direkte Links bereit, um sicherzustellen, dass Sie die neuesten und vollständigen echten Bewertungen sehen.",
+    "cta_button": "Google Maps-Bewertungen öffnen",
+    "placeholder_title": "Bewertungsauszug",
+    "placeholder_desc": "Aufgrund technischer Einschränkungen können wir noch keine spezifischen Bewertungstexte extrahieren. Wenn Sie spezifische Bewertungen anzeigen möchten, fügen Sie diese hier ein."
+  },
+  "map": {
+    "kicker": "STANDORT",
+    "title": "Karte & Anfahrt",
+    "desc": "Verwenden Sie den Google Maps-Einbettungscode. Sie können die Karte auch in einem neuen Fenster öffnen, um Ihre Route zu planen.",
+    "tips_title": "Tipps für den Besuch",
+    "tips_desc": "Die Altstadt von Honfleur lässt sich am besten zu Fuß erkunden. Es wird empfohlen, auf den äußeren Parkplätzen zu parken und am Hafen entlang zum Vieux Bassin zu laufen.",
+    "golden_hour": "Goldene Stunde",
+    "golden_hour_desc": "Abends und in der blauen Stunde: Spiegelungen, Lichter und Atmosphäre sind auf ihrem Höhepunkt.",
+    "photo_spot": "Fotospot",
+    "photo_spot_desc": "Niedrige Winkel auf der Gebäudeseite des Ufers ermöglichen es, die Spiegelungen im Wasser besser einzufangen.",
+    "route_plan": "Routenplanung",
+    "route_plan_desc": "Klicken Sie auf die Schaltfläche, um Google Maps zu öffnen und Echtzeitnavigation zu erhalten.",
+    "cta_button": "Route in Google Maps planen"
+  },
+  "blog": {
+    "kicker": "BLOG-BEREICH",
+    "title": "Blog-Position",
+    "desc": "Reserviert für zukünftige Updates: Reiseführer, beste Spots, Restaurantlisten, saisonale Empfehlungen usw.",
+    "placeholder_title": "Artikel Platzhalter #{{id}}",
+    "placeholder_desc": "Sie können Blog-Inhalte später mit statischem Markdown oder einem externen CMS verbinden.",
+    "read_button": "Lesen",
+    "toast_message": "Blog-Funktion reserviert: Inhaltssystem wird später verbunden."
+  },
+  "footer": {
+    "built_as": "Als statische Panorama-Seite erstellt.",
+    "rights": "Alle Rechte vorbehalten."
+  }
+}
