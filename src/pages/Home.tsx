@@ -192,24 +192,24 @@ export default function Home() {
               </p>
 
               <div className="flex flex-wrap items-center gap-3">
-                <a href="#map">
+                <Link href="/map">
                   <Button variant="outline" className="gap-2 bg-background/65">
                     <MapPin className="h-4 w-4" />
                     {t("hero.cta_map")}
                   </Button>
-                </a>
-                <a href="#photos">
+                </Link>
+                <Link href="/photos">
                   <Button variant="outline" className="gap-2 bg-background/65">
                     <ImageIcon className="h-4 w-4" />
                     {t("hero.cta_photos")}
                   </Button>
-                </a>
-                <a href="#blog">
+                </Link>
+                <Link href="/blog">
                   <Button variant="outline" className="gap-2 bg-background/65">
                     <NotebookPen className="h-4 w-4" />
                     {t("hero.cta_blog")}
                   </Button>
-                </a>
+                </Link>
               </div>
             </div>
 

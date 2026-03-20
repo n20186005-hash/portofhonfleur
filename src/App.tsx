@@ -6,6 +6,8 @@ import ErrorBoundary from "@/components/ErrorBoundary";
 import { ThemeProvider } from "@/contexts/ThemeContext";
 import { FloatingSwitcher } from "@/components/FloatingSwitcher";
 import Home from "@/pages/Home";
+import Map from "@/pages/Map";
+import Photos from "@/pages/Photos";
 import BlogDetail from "@/pages/BlogDetail";
 import PrivacyPolicy from "@/pages/PrivacyPolicy";
 import TermsOfService from "@/pages/TermsOfService";
@@ -19,6 +21,8 @@ function AppRouter() {
         <Route path="/privacy" component={PrivacyPolicy} />
         <Route path="/terms" component={TermsOfService} />
         <Route path="/cookies" component={CookieSettings} />
+        <Route path="/map" component={Map} />
+        <Route path="/photos" component={Photos} />
         <Route path="/blog/:id" component={BlogDetail} />
         <Route path="/" component={Home} />
         <Route component={NotFound} />
