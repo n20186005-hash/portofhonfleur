@@ -15,6 +15,7 @@ export default defineConfig({
     }),
     tailwindcss(),
   ],
+  assetsInclude: ["**/*.json", "**/*.md"],
   resolve: { alias: { "@": path.resolve(__dirname, "./src") } },
   base: "./",
   build: { outDir: "dist", emptyOutDir: true },
