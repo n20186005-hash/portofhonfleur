@@ -160,7 +160,7 @@ export default function Home() {
                 <Stamp>
                   <Quote className="h-3.5 w-3.5" />
                   <span className="font-semibold">25,011</span>
-                  <span className="text-muted-foreground">{t("hero.reviews_count", { count: "25,011" })}</span>
+                  <span className="text-muted-foreground">{t("hero.reviews_count", { count: "25,011" } as any)}</span>
                 </Stamp>
                 <Badge variant="secondary" className="border border-border/70 bg-secondary/70">
                   Marina
