@@ -33,6 +33,8 @@ i18n
     },
     react: {
       useSuspense: false,
+      bindI18n: 'languageChanged loaded',
+      bindI18nStore: 'added removed',
     },
     detection: {
       order: ["localStorage", "cookie", "navigator", "htmlTag"],

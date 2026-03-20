@@ -1,3 +1,4 @@
+import React from "react";
 import { useTranslation } from "react-i18next";
 import { useParams } from "wouter";
 import ReactMarkdown from "react-markdown";
@@ -9,6 +10,19 @@ import NotFound from "@/pages/NotFound";
 export default function BlogDetail() {
   const { id } = useParams();
   const { t, i18n } = useTranslation();
+  const [language, setLanguage] = React.useState(i18n.language);
+
+  // Force re-render when language changes
+  React.useEffect(() => {
+    const handleLanguageChanged = () => {
+      setLanguage(i18n.language);
+    };
+    
+    i18n.on('languageChanged', handleLanguageChanged);
+    return () => {
+      i18n.off('languageChanged', handleLanguageChanged);
+    };
+  }, [i18n]);
 
   // Valid post IDs
   const validIds = ["post1", "post2", "post3"];

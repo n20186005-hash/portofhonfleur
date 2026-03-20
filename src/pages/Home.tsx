@@ -1,4 +1,4 @@
-import { useMemo } from "react";
+import React, { useMemo } from "react";
 import { Link } from "wouter";
 import {
   Anchor,
@@ -63,7 +63,20 @@ function Stamp({ children }: { children: React.ReactNode }) {
 }
 
 export default function Home() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const [language, setLanguage] = React.useState(i18n.language);
+
+  // Force re-render when language changes
+  React.useEffect(() => {
+    const handleLanguageChanged = () => {
+      setLanguage(i18n.language);
+    };
+    
+    i18n.on('languageChanged', handleLanguageChanged);
+    return () => {
+      i18n.off('languageChanged', handleLanguageChanged);
+    };
+  }, [i18n]);
 
   const gallery = useMemo(
     () => [
