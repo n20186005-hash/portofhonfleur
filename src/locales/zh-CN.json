@@ -94,7 +94,8 @@
     "built_as": "Built as a static scenic page.",
     "rights": "All rights reserved.",
     "disclaimer_title": "独立第三方旅游指南",
-    "disclaimer_content": "本网站是独立的第三方旅游资讯指南，与翁弗勒尔港的官方管理机构无任何关联。如需购买官方门票，请访问官方渠道。"
+    "disclaimer_content": "本网站是独立的第三方旅游资讯指南，与翁弗勒尔港的官方管理机构无任何关联。如需购买官方门票，请访问官方渠道。",
+    "data_source": "信息提取自公共资源（翁弗勒尔旅游局和维基百科），并结合了谷歌地图的基本信息。"
   },
   "privacy": {
     "title": "隐私政策",

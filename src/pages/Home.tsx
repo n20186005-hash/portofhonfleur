@@ -545,6 +545,9 @@ export default function Home() {
             </div>
 
             <div className="max-w-3xl text-sm text-muted-foreground">{FOOTER_SUPPORT_TEXT}</div>
+            <div className="max-w-3xl text-xs text-muted-foreground">
+              {t("footer.data_source")}
+            </div>
             <div className="text-xs text-muted-foreground">
               {t("footer.copyright", { year: new Date().getFullYear() })}
             </div>

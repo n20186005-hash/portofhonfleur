@@ -3,6 +3,7 @@ import { Link } from "wouter";
 import { ArrowLeft, Anchor, Shield, FileText, Cookie } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import { useTranslation } from "react-i18next";
 
 interface LegalPageLayoutProps {
   title: string;
@@ -20,6 +21,8 @@ export default function LegalPageLayout({
   lastUpdated,
   children,
 }: LegalPageLayoutProps) {
+  const { t } = useTranslation();
+
   return (
     <div className="min-h-screen bg-background text-foreground grain">
       <div className="mx-auto w-full max-w-5xl px-5 py-10 md:px-8">
@@ -77,7 +80,12 @@ export default function LegalPageLayout({
           </Link>
         </div>
 
-        <div className="mt-10 text-center text-sm text-muted-foreground">{FOOTER_SUPPORT_TEXT}</div>
+        <div className="mt-10 text-center text-sm text-muted-foreground">
+          {FOOTER_SUPPORT_TEXT}
+        </div>
+        <div className="mt-2 text-center text-xs text-muted-foreground">
+          {t("footer.data_source")}
+        </div>
       </div>
     </div>
   );

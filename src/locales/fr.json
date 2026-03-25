@@ -72,7 +72,8 @@
     "built_as": "Construit comme une page panoramique statique.",
     "rights": "Tous droits réservés.",
     "disclaimer_title": "Guide de Voyage Indépendant Tiers",
-    "disclaimer_content": "Ce site est un guide d'informations touristiques indépendant tiers. Il n'est pas affilié, approuvé ou connecté aux organismes officiels de gestion du Port de Honfleur. Pour les billets officiels et informations, veuillez visiter les canaux officiels."
+    "disclaimer_content": "Ce site est un guide d'informations touristiques indépendant tiers. Il n'est pas affilié, approuvé ou connecté aux organismes officiels de gestion du Port de Honfleur. Pour les billets officiels et informations, veuillez visiter les canaux officiels.",
+    "data_source": "Les informations sont extraites de ressources publiques (Office de Tourisme de Honfleur et Wikipédia), combinées aux informations de base de Google Maps."
   },
   "blogs_content": {
     "post1": {

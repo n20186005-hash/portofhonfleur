@@ -72,7 +72,8 @@
     "built_as": "Built as a static scenic page.",
     "rights": "All rights reserved.",
     "disclaimer_title": "獨立第三方旅遊指南",
-    "disclaimer_content": "本網站是獨立的第三方旅遊資訊指南，與翁弗勒爾港的官方管理機構無任何關聯。如需購買官方門票，請訪問官方渠道。"
+    "disclaimer_content": "本網站是獨立的第三方旅遊資訊指南，與翁弗勒爾港的官方管理機構無任何關聯。如需購買官方門票，請訪問官方渠道。",
+    "data_source": "資訊提取自公共資源（翁弗勒爾旅遊局和維基百科），並結合了 Google Maps 的基本資訊。"
   },
   "blogs_content": {
     "post1": {

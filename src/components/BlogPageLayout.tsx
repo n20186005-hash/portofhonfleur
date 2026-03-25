@@ -100,6 +100,9 @@ export default function BlogPageLayout({
         </article>
 
         <footer className="mt-16 border-t border-border/70 pt-10 text-center">
+          <div className="mb-2 text-xs text-muted-foreground">
+            {t("footer.data_source")}
+          </div>
           <div className="text-sm text-muted-foreground">
             {t("footer.copyright", { year: new Date().getFullYear() })}
           </div>

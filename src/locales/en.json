@@ -89,7 +89,8 @@
     "built_as": "Built as a static scenic page.",
     "rights": "All rights reserved.",
     "disclaimer_title": "Independent Third-Party Travel Guide",
-    "disclaimer_content": "This website is an independent third-party travel information guide. It is not affiliated with, endorsed by, or connected to the official management bodies of Port of Honfleur. For official tickets and information, please visit official channels."
+    "disclaimer_content": "This website is an independent third-party travel information guide. It is not affiliated with, endorsed by, or connected to the official management bodies of Port of Honfleur. For official tickets and information, please visit official channels.",
+    "data_source": "Information is extracted from public resources (Honfleur Tourist Office and Wikipedia), combined with basic information from Google Maps."
   },
   "privacy": {
     "title": "Privacy Policy",
