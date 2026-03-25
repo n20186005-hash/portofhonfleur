@@ -70,7 +70,9 @@
   "footer": {
     "copyright": "© {{year}} Port of Honfleur Guide. Alle Rechte vorbehalten.",
     "built_as": "Als statische Panorama-Seite erstellt.",
-    "rights": "Alle Rechte vorbehalten."
+    "rights": "Alle Rechte vorbehalten.",
+    "disclaimer_title": "Unabhängiger Drittanbieter-Reiseführer",
+    "disclaimer_content": "Diese Website ist ein unabhängiger Drittanbieter-Reiseführer. Sie ist nicht affiliated, unterstützt oder mit den offiziellen Verwaltungsorganen des Hafens von Honfleur verbunden. Für offizielle Tickets und Informationen besuchen Sie bitte die offiziellen Kanäle."
   },
   "blogs_content": {
     "post1": {

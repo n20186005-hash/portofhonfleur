@@ -87,7 +87,9 @@
   "footer": {
     "copyright": "© {{year}} Port of Honfleur Guide. All Rights Reserved.",
     "built_as": "Built as a static scenic page.",
-    "rights": "All rights reserved."
+    "rights": "All rights reserved.",
+    "disclaimer_title": "Independent Third-Party Travel Guide",
+    "disclaimer_content": "This website is an independent third-party travel information guide. It is not affiliated with, endorsed by, or connected to the official management bodies of Port of Honfleur. For official tickets and information, please visit official channels."
   },
   "privacy": {
     "title": "Privacy Policy",
@@ -112,7 +114,11 @@
     "content": "Content Ownership",
     "content_desc": "The photos on this website come from public sources or the Google Maps location page, and their rights belong to the original authors.",
     "disclaimer": "Disclaimer",
-    "disclaimer_desc": "While we strive to provide accurate information, we are not responsible for the absolute accuracy or timeliness of external data (such as Google Maps ratings, business hours).",
+    "disclaimer_title": "Independent Third-Party Travel Guide",
+    "disclaimer_desc": "This website is an independent third-party travel information guide designed to provide visitors with objective historical background and sightseeing recommendations. This site is not affiliated with, endorsed by, or connected to the official management or administrative bodies of Port of Honfleur. We aim to offer neutral, factual information to help travelers plan their visits.",
+    "disclaimer_official": "For official tickets, tours, and authoritative information:",
+    "disclaimer_official_link": "Please visit the official Port of Honfleur website or contact the local tourism board directly.",
+    "disclaimer_data": "While we strive to provide accurate information, we are not responsible for the absolute accuracy or timeliness of external data (such as Google Maps ratings, business hours).",
     "links": "External Links",
     "links_desc": "This website contains links to external sites (such as Google Maps). We are not responsible for the content or privacy practices of these sites.",
     "changes": "Changes",

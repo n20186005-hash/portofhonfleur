@@ -521,6 +521,16 @@ export default function Home() {
       {/* Footer */}
       <footer className="border-t border-border/70 bg-background/80">
         <div className="mx-auto w-full max-w-6xl px-5 py-10 md:px-8">
+          {/* Prominent Disclaimer */}
+          <div className="mb-8 rounded-lg border-2 border-amber-200 bg-amber-50/50 p-6 dark:border-amber-900/30 dark:bg-amber-900/10">
+            <h3 className="mb-2 text-lg font-semibold text-amber-900 dark:text-amber-100">
+              ⚠️ {t("footer.disclaimer_title")}
+            </h3>
+            <p className="text-sm leading-relaxed text-amber-800 dark:text-amber-200">
+              {t("footer.disclaimer_content")}
+            </p>
+          </div>
+
           <div className="flex flex-col items-center gap-5 text-center">
             <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm">
               <Link href="/privacy" className="text-muted-foreground hover:text-foreground">

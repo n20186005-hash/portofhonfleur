@@ -75,7 +75,9 @@
   "footer": {
     "copyright": "© {{year}} ポート・ド・オンフルール ガイド · All Rights Reserved.",
     "built_as": "静的なパノラマページとして構築されています。",
-    "rights": "全著作権所有。"
+    "rights": "全著作権所有。",
+    "disclaimer_title": "独立したサードパーティ旅行ガイド",
+    "disclaimer_content": "このサイトは独立したサードパーティの旅行情報ガイドです。ポート・ド・オンフルールの公式管理者とは一切提携、承認、関連していません。公式チケットや情報は公式チャンネルをご確認ください。"
   },
   "blogs_content": {
     "post1": {

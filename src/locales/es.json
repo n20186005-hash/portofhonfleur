@@ -70,7 +70,9 @@
   "footer": {
     "copyright": "© {{year}} Guía del Puerto de Honfleur. Todos los derechos reservados.",
     "built_as": "Construido como una página panorámica estática.",
-    "rights": "Todos los derechos reservados."
+    "rights": "Todos los derechos reservados.",
+    "disclaimer_title": "Guía de Viaje Independiente de Terceros",
+    "disclaimer_content": "Este sitio es una guía de información turística independiente de terceros. No está afiliado, respaldado ni conectado con los organismos oficiales de gestión del Puerto de Honfleur. Para boletos oficiales e información, visite los canales oficiales."
   },
   "blogs_content": {
     "post1": {

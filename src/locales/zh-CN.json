@@ -92,7 +92,9 @@
   "footer": {
     "copyright": "© {{year}} 翁弗勒尔港指南 · 版权所有",
     "built_as": "Built as a static scenic page.",
-    "rights": "All rights reserved."
+    "rights": "All rights reserved.",
+    "disclaimer_title": "独立第三方旅游指南",
+    "disclaimer_content": "本网站是独立的第三方旅游资讯指南，与翁弗勒尔港的官方管理机构无任何关联。如需购买官方门票，请访问官方渠道。"
   },
   "privacy": {
     "title": "隐私政策",
@@ -117,11 +119,15 @@
     "content": "内容所有权",
     "content_desc": "本网站展示的照片来自公开来源或 Google Maps 地点页，其权利属于原作者。本网站的布局与代码仅供演示与信息说明。",
     "disclaimer": "免责声明",
-    "disclaimer_desc": "虽然我们力求提供准确信息，但不对外部数据（如 Google Maps 评分、营业时间）的绝对准确性或及时性负责。旅行信息应以实际情况为准。",
+    "disclaimer_title": "独立第三方旅游指南",
+    "disclaimer_desc": "本网站是独立的第三方旅游资讯指南，旨在为游客提供客观的历史背景与游览建议。本网站与翁弗勒尔港的官方管理机构无任何关联。",
+    "disclaimer_official": "官方门票与信息：",
+    "disclaimer_official_link": "如需购买官方门票或获取权威信息，请访问翁弗勒尔港官方网站或联系当地旅游部门。",
+    "disclaimer_data": "虽然我们力求提供准确信息，但不对外部数据（如 Google Maps 评分、营业时间）的绝对准确性或及时性负责。旅行信息应以实际情况为准。",
     "links": "外部链接",
     "links_desc": "本网站包含指向外部网站（如 Google Maps）的链接。我们不对这些网站的内容或隐私做法负责。",
     "changes": "变更",
-    "changes_desc": "我们保留随时更新这些条款的权利。重大变更将反映在“最后更新”日期中。"
+    "changes_desc": "我们保留随时更新这些条款的权利。重大变更将反映在「最后更新」日期中。"
   },
   "cookies": {
     "title": "Cookie 设置",
