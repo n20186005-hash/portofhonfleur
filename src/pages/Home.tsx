@@ -101,7 +101,6 @@ export default function Home() {
         <meta property="og:description" content={t("hero.description")} />
         <meta property="og:image" content={heroImg} />
         <meta name="twitter:card" content="summary_large_image" />
-        <link rel="canonical" href="https://www.portofhonfleur.com/" />
       </Helmet>
 
       {/* Top Nav */}

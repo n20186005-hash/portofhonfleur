@@ -25,8 +25,12 @@ i18n
       "zh-CN": { translation: zhCN },
       "zh-TW": { translation: zhTW },
     },
-    fallbackLng: "en",
-    supportedLngs: ["en", "fr", "es", "de", "ja", "ko", "zh-CN", "zh-TW"],
+    fallbackLng: {
+      "zh-cn": ["zh-CN"],
+      "zh-tw": ["zh-TW"],
+      "default": ["en"]
+    },
+    supportedLngs: ["en", "fr", "es", "de", "ja", "ko", "zh-CN", "zh-TW", "zh-cn", "zh-tw"],
     debug: import.meta.env.DEV,
     interpolation: {
       escapeValue: false,
@@ -37,8 +41,9 @@ i18n
       bindI18nStore: 'added removed',
     },
     detection: {
-      order: ["localStorage", "cookie", "navigator", "htmlTag"],
+      order: ["path", "localStorage", "cookie", "navigator", "htmlTag"],
       lookupLocalStorage: "i18nextLng",
+      lookupFromPathIndex: 0,
       caches: ["localStorage"],
     },
   });

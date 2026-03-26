@@ -27,6 +27,21 @@ export function FloatingSwitcher() {
 
   const changeLanguage = (code: string) => {
     i18n.changeLanguage(code);
+    
+    // Update URL to match new language for SEO
+    const path = window.location.pathname;
+    const match = path.match(/^\/([a-z]{2}(-[a-zA-Z]{2})?)(\/|$)/i);
+    const supportedLangs = languages.map(l => l.code.toLowerCase());
+    
+    let cleanPath = path;
+    if (match && supportedLangs.includes(match[1].toLowerCase())) {
+      cleanPath = '/' + path.substring(match[1].length + 2); // +2 for leading and trailing slash (or end)
+    }
+    if (cleanPath === '//') cleanPath = '/';
+    if (!cleanPath.startsWith('/')) cleanPath = '/' + cleanPath;
+    
+    const newPath = `/${code.toLowerCase()}${cleanPath === '/' ? '' : cleanPath}${window.location.search}${window.location.hash}`;
+    window.location.href = newPath;
   };
 
   return (

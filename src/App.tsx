@@ -1,10 +1,10 @@
 import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { Router, Route, Switch } from "wouter";
-import { useHashLocation } from "wouter/use-hash-location";
 import ErrorBoundary from "@/components/ErrorBoundary";
 import { ThemeProvider } from "@/contexts/ThemeContext";
 import { FloatingSwitcher } from "@/components/FloatingSwitcher";
+import { SEOHead } from "@/components/SEOHead";
 import Home from "@/pages/Home";
 import Map from "@/pages/Map";
 import Photos from "@/pages/Photos";
@@ -16,8 +16,19 @@ import CookieSettings from "@/pages/CookieSettings";
 import NotFound from "@/pages/NotFound";
 
 function AppRouter() {
+  // Extract language prefix for wouter base path
+  const path = window.location.pathname;
+  const match = path.match(/^\/([a-z]{2}(-[a-zA-Z]{2})?)(\/|$)/i);
+  const supportedLangs = ["en", "fr", "es", "de", "ja", "ko", "zh-cn", "zh-tw"];
+  
+  let basePath = "";
+  if (match && supportedLangs.includes(match[1].toLowerCase())) {
+    basePath = `/${match[1]}`;
+  }
+
   return (
-    <Router hook={useHashLocation}>
+    <Router base={basePath}>
+      <SEOHead />
       <Switch>
         <Route path="/privacy" component={PrivacyPolicy} />
         <Route path="/terms" component={TermsOfService} />
