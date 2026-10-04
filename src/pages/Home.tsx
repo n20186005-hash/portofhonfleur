@@ -65,6 +65,20 @@ function Stamp({ children }: { children: React.ReactNode }) {
 export default function Home() {
   const { t, i18n } = useTranslation();
   const [language, setLanguage] = React.useState(i18n.language);
+  const normalizedLanguage = language.toLowerCase();
+  const isFrench = normalizedLanguage.startsWith("fr");
+  const heroTitle = t("hero.title");
+  const heroDescription = t("hero.description");
+  const homeTitle = isFrench
+    ? "Port de Honfleur : Vieux Bassin, accès, plan & conseils"
+    : `Port of Honfleur | ${heroTitle}`;
+  const featuredGuide = {
+    kicker: "GUIDE FRANCE",
+    title: "Que faire à Honfleur ?",
+    description:
+      "Découvrez un itinéraire clair pour visiter le Vieux Bassin, l'église Sainte-Catherine, les ruelles de la vieille ville et les meilleurs points de vue en une journée.",
+    cta: "Voir le guide",
+  };
 
   // Force re-render when language changes
   React.useEffect(() => {
@@ -95,10 +109,10 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-background text-foreground grain">
       <Helmet>
-        <title>Port of Honfleur | {t("hero.title")}</title>
-        <meta name="description" content={t("hero.description")} />
-        <meta property="og:title" content={`Port of Honfleur | ${t("hero.title")}`} />
-        <meta property="og:description" content={t("hero.description")} />
+        <title>{homeTitle}</title>
+        <meta name="description" content={heroDescription} />
+        <meta property="og:title" content={homeTitle} />
+        <meta property="og:description" content={heroDescription} />
         <meta property="og:image" content={heroImg} />
         <meta name="twitter:card" content="summary_large_image" />
       </Helmet>
@@ -183,11 +197,11 @@ export default function Home() {
               </div>
 
               <h1 className="text-balance text-5xl font-semibold tracking-tight md:text-6xl">
-                {t("hero.title")}
+                {heroTitle}
               </h1>
 
               <p className="max-w-2xl text-base leading-relaxed text-foreground/85 md:text-lg">
-                {t("hero.description")}
+                {heroDescription}
               </p>
 
               <div className="flex flex-wrap items-center gap-3">
@@ -275,6 +289,34 @@ export default function Home() {
           </motion.div>
         </div>
       </section>
+
+      {isFrench && (
+        <section className="mx-auto w-full max-w-6xl px-5 py-6 md:px-8 md:py-8">
+          <Card className="paper-shadow border-border/70 bg-card/80 p-5 md:p-6">
+            <div className="grid gap-5 md:grid-cols-[1fr_auto] md:items-center">
+              <div>
+                <div className="flex items-center gap-2 text-xs tracking-[0.24em] text-muted-foreground">
+                  <span className="inline-flex h-2 w-2 rounded-full bg-accent" />
+                  <span>{featuredGuide.kicker}</span>
+                </div>
+                <h2 className="mt-3 text-2xl font-semibold tracking-tight md:text-3xl">
+                  {featuredGuide.title}
+                </h2>
+                <p className="mt-2 max-w-3xl text-sm leading-relaxed text-muted-foreground md:text-base">
+                  {featuredGuide.description}
+                </p>
+              </div>
+
+              <Link href="/que-faire-honfleur">
+                <Button className="gap-2 bg-primary text-primary-foreground hover:bg-primary/90">
+                  {featuredGuide.cta}
+                  <ArrowUpRight className="h-4 w-4" />
+                </Button>
+              </Link>
+            </div>
+          </Card>
+        </section>
+      )}
 
       {/* Photos */}
       <section id="photos" className="mx-auto w-full max-w-6xl px-5 py-14 md:px-8">

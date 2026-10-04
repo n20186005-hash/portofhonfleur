@@ -10,6 +10,7 @@ import Map from "@/pages/Map";
 import Photos from "@/pages/Photos";
 import Blog from "@/pages/Blog";
 import BlogDetail from "@/pages/BlogDetail";
+import QueFaireHonfleur from "@/pages/QueFaireHonfleur";
 import PrivacyPolicy from "@/pages/PrivacyPolicy";
 import TermsOfService from "@/pages/TermsOfService";
 import CookieSettings from "@/pages/CookieSettings";
@@ -33,6 +34,7 @@ function AppRouter() {
         <Route path="/privacy" component={PrivacyPolicy} />
         <Route path="/terms" component={TermsOfService} />
         <Route path="/cookies" component={CookieSettings} />
+        <Route path="/que-faire-honfleur" component={QueFaireHonfleur} />
         <Route path="/map" component={Map} />
         <Route path="/photos" component={Photos} />
         <Route path="/blog" component={Blog} />

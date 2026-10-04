@@ -5,6 +5,9 @@ import { useLocation } from "wouter";
 const DOMAIN = "https://www.portofhonfleur.com";
 const SUPPORTED_LANGUAGES = ["en", "fr", "es", "de", "ja", "ko", "zh-CN", "zh-TW"];
 const DEFAULT_LANGUAGE = "en";
+const PATH_LANGUAGE_OVERRIDES: Record<string, string[]> = {
+  "/que-faire-honfleur": ["fr"],
+};
 
 interface SEOHeadProps {
   title?: string;
@@ -32,12 +35,21 @@ export function SEOHead({ title, description, path }: SEOHeadProps) {
   }
   if (cleanPath === '/') cleanPath = '';
   
+  const availableLanguages = PATH_LANGUAGE_OVERRIDES[cleanPath] || SUPPORTED_LANGUAGES;
+  const hasPathOverride = cleanPath in PATH_LANGUAGE_OVERRIDES;
+  const normalizedCurrentLang = formatLangForUrl(currentLang);
+  const activeLanguage = availableLanguages.find(
+    (lang) => formatLangForUrl(lang) === normalizedCurrentLang
+  ) || availableLanguages[0];
+
   const getUrlForLang = (lang: string) => {
     return `${DOMAIN}/${formatLangForUrl(lang)}${cleanPath}`;
   };
 
-  const defaultUrl = `${DOMAIN}${cleanPath || '/'}`;
-  const currentUrl = getUrlForLang(currentLang);
+  const defaultUrl = hasPathOverride
+    ? getUrlForLang(availableLanguages[0])
+    : `${DOMAIN}${cleanPath || '/'}`;
+  const currentUrl = getUrlForLang(activeLanguage);
 
   return (
     <Helmet>
@@ -48,7 +60,7 @@ export function SEOHead({ title, description, path }: SEOHeadProps) {
       <link rel="canonical" href={currentUrl} />
       
       {/* Alternate hreflang links */}
-      {SUPPORTED_LANGUAGES.map((lang) => (
+      {availableLanguages.map((lang) => (
         <link 
           key={lang} 
           rel="alternate" 

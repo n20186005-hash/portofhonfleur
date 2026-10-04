@@ -9,16 +9,17 @@ const DOMAIN = "https://www.portofhonfleur.com";
 const LANGUAGES = ["en", "fr", "es", "de", "ja", "ko", "zh-cn", "zh-tw"];
 
 const PATHS = [
-  "",
-  "/map",
-  "/photos",
-  "/blog",
-  "/blog/post1",
-  "/blog/post2",
-  "/blog/post3",
-  "/privacy",
-  "/terms",
-  "/cookies"
+  { path: "", languages: LANGUAGES, includeDefault: true },
+  { path: "/map", languages: LANGUAGES, includeDefault: true },
+  { path: "/photos", languages: LANGUAGES, includeDefault: true },
+  { path: "/blog", languages: LANGUAGES, includeDefault: true },
+  { path: "/blog/post1", languages: LANGUAGES, includeDefault: true },
+  { path: "/blog/post2", languages: LANGUAGES, includeDefault: true },
+  { path: "/blog/post3", languages: LANGUAGES, includeDefault: true },
+  { path: "/privacy", languages: LANGUAGES, includeDefault: true },
+  { path: "/terms", languages: LANGUAGES, includeDefault: true },
+  { path: "/cookies", languages: LANGUAGES, includeDefault: true },
+  { path: "/que-faire-honfleur", languages: ["fr"], includeDefault: false }
 ];
 
 function generateSitemap() {
@@ -28,18 +29,22 @@ function generateSitemap() {
   const today = new Date().toISOString().split('T')[0];
 
   // For each language and path combination
-  for (const lang of LANGUAGES) {
-    for (const p of PATHS) {
-      const url = `${DOMAIN}/${lang}${p}`;
+  for (const entry of PATHS) {
+    const xDefaultUrl = entry.includeDefault
+      ? `${DOMAIN}${entry.path || "/"}`
+      : `${DOMAIN}/${entry.languages[0]}${entry.path}`;
+
+    for (const lang of entry.languages) {
+      const url = `${DOMAIN}/${lang}${entry.path}`;
       
       xml += `  <url>\n`;
       xml += `    <loc>${url}</loc>\n`;
       xml += `    <lastmod>${today}</lastmod>\n`;
       
       // Add hreflang links for all other languages + x-default
-      xml += `    <xhtml:link rel="alternate" hreflang="x-default" href="${DOMAIN}${p}" />\n`;
-      for (const altLang of LANGUAGES) {
-        xml += `    <xhtml:link rel="alternate" hreflang="${altLang}" href="${DOMAIN}/${altLang}${p}" />\n`;
+      xml += `    <xhtml:link rel="alternate" hreflang="x-default" href="${xDefaultUrl}" />\n`;
+      for (const altLang of entry.languages) {
+        xml += `    <xhtml:link rel="alternate" hreflang="${altLang}" href="${DOMAIN}/${altLang}${entry.path}" />\n`;
       }
       
       xml += `  </url>\n`;
@@ -47,14 +52,14 @@ function generateSitemap() {
   }
 
   // Also add the x-default (root without lang) URLs
-  for (const p of PATHS) {
-    const url = `${DOMAIN}${p}`;
+  for (const entry of PATHS.filter((item) => item.includeDefault)) {
+    const url = `${DOMAIN}${entry.path || "/"}`;
     xml += `  <url>\n`;
     xml += `    <loc>${url}</loc>\n`;
     xml += `    <lastmod>${today}</lastmod>\n`;
-    xml += `    <xhtml:link rel="alternate" hreflang="x-default" href="${DOMAIN}${p}" />\n`;
-    for (const altLang of LANGUAGES) {
-      xml += `    <xhtml:link rel="alternate" hreflang="${altLang}" href="${DOMAIN}/${altLang}${p}" />\n`;
+    xml += `    <xhtml:link rel="alternate" hreflang="x-default" href="${url}" />\n`;
+    for (const altLang of entry.languages) {
+      xml += `    <xhtml:link rel="alternate" hreflang="${altLang}" href="${DOMAIN}/${altLang}${entry.path}" />\n`;
     }
     xml += `  </url>\n`;
   }
