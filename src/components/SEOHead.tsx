@@ -52,7 +52,7 @@ export function SEOHead({ title, description, path }: SEOHeadProps) {
   const currentUrl = getUrlForLang(activeLanguage);
 
   return (
-    <Helmet>
+    <Helmet htmlAttributes={{ lang: activeLanguage }}>
       {title && <title>{title}</title>}
       {description && <meta name="description" content={description} />}
       

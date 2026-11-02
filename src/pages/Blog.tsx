@@ -9,7 +9,7 @@ import { Badge } from "@/components/ui/badge";
 
 export default function Blog() {
   const { t, i18n } = useTranslation();
-  const [language, setLanguage] = React.useState(i18n.language);
+  const [, setLanguage] = React.useState(i18n.language);
 
   // Force re-render when language changes
   React.useEffect(() => {

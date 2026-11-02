@@ -7,7 +7,7 @@ export default function TermsOfService() {
     <LegalPageLayout
       title={t("terms.title")}
       icon={LegalIcons.terms}
-      lastUpdated="2026-03-20"
+      lastUpdated="2026-11-02"
     >
       {/* Prominent Independent Third-Party Disclaimer */}
       <div className="mb-8 rounded-lg border-2 border-amber-200 bg-amber-50/50 p-6 dark:border-amber-900/30 dark:bg-amber-900/10">
@@ -19,10 +19,10 @@ export default function TermsOfService() {
         </p>
         <div className="mt-4 rounded border border-amber-300 bg-amber-100/50 p-4 dark:border-amber-800 dark:bg-amber-900/20">
           <p className="mb-2 text-sm font-medium text-amber-900 dark:text-amber-100">
-            🎫 {t("terms.disclaimer_official")}
+            {t("terms.disclaimer_official")}
           </p>
           <p className="text-sm text-amber-800 dark:text-amber-200">
-            {t("terms.disclaimer_official_link")}
+            <a href="https://www.ot-honfleur.fr/">{t("terms.disclaimer_official_link")}</a>
           </p>
         </div>
       </div>

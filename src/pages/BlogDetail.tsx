@@ -10,7 +10,7 @@ import NotFound from "@/pages/NotFound";
 export default function BlogDetail() {
   const { id } = useParams();
   const { t, i18n } = useTranslation();
-  const [language, setLanguage] = React.useState(i18n.language);
+  const [, setLanguage] = React.useState(i18n.language);
 
   // Force re-render when language changes
   React.useEffect(() => {
@@ -43,12 +43,12 @@ export default function BlogDetail() {
 
   // Metadata for different blogs (mocked as they are not in translations yet)
   const meta: Record<string, { date: string; author: string; category: string }> = {
-    post1: { date: "2026-03-20", author: "Travel Guide", category: "Travel" },
-    post2: { date: "2026-03-19", author: "Photography Pro", category: "Photography" },
-    post3: { date: "2026-03-18", author: "Budget Explorer", category: "Budget" },
+    post1: { date: "2026-11-02", author: "Port of Honfleur editorial team", category: "Travel" },
+    post2: { date: "2026-11-02", author: "Port of Honfleur editorial team", category: "Photography" },
+    post3: { date: "2026-11-02", author: "Port of Honfleur editorial team", category: "Budget" },
   };
 
-  const blogMeta = meta[id] || { date: "2026-03-20", author: "Guide", category: "General" };
+  const blogMeta = meta[id] || { date: "2026-11-02", author: "Guide", category: "General" };
 
   return (
     <>
@@ -69,6 +69,14 @@ export default function BlogDetail() {
         <ReactMarkdown remarkPlugins={[remarkGfm]}>
           {blog.content}
         </ReactMarkdown>
+        <nav aria-label="Related guides" className="mt-8 border-t pt-5">
+          <ul>
+            <li><a href="/fr/parking-honfleur" lang="fr">Parking à Honfleur (FR)</a></li>
+            <li><a href="/fr/honfleur-sans-voiture" lang="fr">Honfleur sans voiture (FR)</a></li>
+            <li><a href="/en/honfleur-marina" lang="en">Honfleur marina (EN)</a></li>
+            <li><a href="/en/honfleur-cruise-port" lang="en">Honfleur cruise port (EN)</a></li>
+          </ul>
+        </nav>
       </BlogPageLayout>
     </>
   );

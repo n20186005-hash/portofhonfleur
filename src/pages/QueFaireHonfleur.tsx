@@ -11,9 +11,6 @@ import {
   ParkingCircle,
 } from "lucide-react";
 
-import heroImg from "@/assets/photos/vieux-bassin-aerial.webp";
-import sailboatsImg from "@/assets/photos/vieux-bassin-sailboats.webp";
-import quayImg from "@/assets/photos/carousel-quay.webp";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -113,20 +110,19 @@ export default function QueFaireHonfleur() {
   return (
     <>
       <Helmet>
-        <title>Que faire a Honfleur ? 15 lieux a voir + itineraire 1 jour</title>
+        <title>Que faire a Honfleur ? 6 lieux a voir + itineraire 1 jour</title>
         <meta
           name="description"
           content="Que faire a Honfleur ? Retrouvez les incontournables du Vieux Bassin, les lieux a voir, un itineraire simple sur 1 jour, les conseils de stationnement et les meilleurs points photo."
         />
         <meta
           property="og:title"
-          content="Que faire a Honfleur ? 15 lieux a voir + itineraire 1 jour"
+          content="Que faire a Honfleur ? 6 lieux a voir + itineraire 1 jour"
         />
         <meta
           property="og:description"
           content="Un guide pratique pour visiter Honfleur a pied autour du Vieux Bassin, de Sainte-Catherine et des meilleurs points de vue."
         />
-        <meta property="og:image" content={heroImg} />
       </Helmet>
 
       <div className="min-h-screen bg-background text-foreground grain">
@@ -134,7 +130,7 @@ export default function QueFaireHonfleur() {
           <div
             className="absolute inset-0 -z-10"
             style={{
-              backgroundImage: `url(${heroImg})`,
+              backgroundImage: "linear-gradient(130deg, #c3d8d1, #e5dbc8)",
               backgroundPosition: "center",
               backgroundSize: "cover",
             }}
@@ -161,7 +157,7 @@ export default function QueFaireHonfleur() {
                   <span>HONFLEUR A PIED</span>
                 </div>
                 <h1 className="mt-3 max-w-4xl text-balance text-4xl font-semibold tracking-tight md:text-6xl">
-                  Que faire a Honfleur ? 15 lieux a voir + itineraire 1 jour
+                  Que faire a Honfleur ? 6 lieux a voir + itineraire 1 jour
                 </h1>
                 <p className="mt-4 max-w-3xl text-base leading-relaxed text-foreground/85 md:text-lg">
                   Si vous cherchez que faire a Honfleur, commencez par le Vieux Bassin, les ruelles
@@ -237,8 +233,7 @@ export default function QueFaireHonfleur() {
             </h2>
             <p className="mt-3 max-w-3xl text-sm leading-relaxed text-muted-foreground md:text-base">
               Pour une premiere visite, inutile de multiplier les detours. Ce sont surtout ces lieux
-              qui donnent une vraie lecture de Honfleur et qui repondent a l'intention de recherche
-              la plus frequente autour de que faire et que voir a Honfleur.
+              qui permettent de découvrir le port et les quartiers voisins à votre rythme.
             </p>
 
             <div className="mt-8 grid gap-5 md:grid-cols-2">
@@ -278,12 +273,6 @@ export default function QueFaireHonfleur() {
               </p>
 
               <div className="mt-6 overflow-hidden rounded-2xl border border-border/70">
-                <img
-                  src={sailboatsImg}
-                  alt="Voiliers sur le Vieux Bassin a Honfleur"
-                  className="h-72 w-full object-cover"
-                  loading="lazy"
-                />
               </div>
             </div>
 
@@ -329,6 +318,8 @@ export default function QueFaireHonfleur() {
                   <li>Pour une premiere visite, le coeur du voyage reste le Vieux Bassin et ses rues adjacentes.</li>
                 </ul>
                 <div className="mt-6 flex flex-wrap gap-3">
+                  <a className="underline" href="/fr/parking-honfleur">Stationnement</a>
+                  <a className="underline" href="/fr/honfleur-sans-voiture">Venir sans voiture</a>
                   <Link href="/photos">
                     <Button variant="outline" className="gap-2">
                       <Camera className="h-4 w-4" />
@@ -345,12 +336,6 @@ export default function QueFaireHonfleur() {
               </Card>
 
               <div className="order-1 overflow-hidden rounded-2xl border border-border/70 md:order-2">
-                <img
-                  src={quayImg}
-                  alt="Quai du vieux port a Honfleur"
-                  className="h-full min-h-[320px] w-full object-cover"
-                  loading="lazy"
-                />
               </div>
             </div>
           </div>

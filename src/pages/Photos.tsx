@@ -34,10 +34,14 @@ export default function Photos() {
             </p>
             
             <div className="mt-8">
-              {/* Photos content will go here */}
+
               <p className="text-muted-foreground">
-                {t("photos.placeholder")}
+                {t("blogs_content.post2.description")}
               </p>
+              <ul className="mt-6 space-y-4">
+                <li><Link href="/blog/post2" className="underline">{t("blogs_content.post2.title")}</Link></li>
+                <li><a href="https://www.google.com/maps/place/Port+of+Honfleur/@49.4200932,0.2302941,17z/data=!4m6!3m5!1s0x47e033bbbc1fa09f:0xb3180f46d65c5a9a!8m2!3d49.4200897!4d0.2328744!16s%2Fg%2F1q5bw1t4q" target="_blank" rel="noreferrer" className="underline">{t("facts.view_more")}</a></li>
+              </ul>
             </div>
           </div>
         </div>

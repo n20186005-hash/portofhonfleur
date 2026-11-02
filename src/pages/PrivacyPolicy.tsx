@@ -7,7 +7,7 @@ export default function PrivacyPolicy() {
     <LegalPageLayout
       title={t("privacy.title")}
       icon={LegalIcons.privacy}
-      lastUpdated="2026-03-20"
+      lastUpdated="2026-11-02"
     >
       <h2>{t("privacy.overview")}</h2>
       <p>{t("privacy.overview_desc")}</p>

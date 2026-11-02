@@ -1,19 +1,16 @@
-import React, { useMemo } from "react";
+import React from "react";
 import { Link } from "wouter";
 import {
   Anchor,
   MapPin,
-  Star,
   Phone,
   Clock,
   Navigation,
   Image as ImageIcon,
-  Quote,
   ArrowUpRight,
   NotebookPen,
 } from "lucide-react";
 import { motion } from "framer-motion";
-import { toast } from "sonner";
 import { useTranslation } from "react-i18next";
 import { Helmet } from "react-helmet-async";
 
@@ -21,19 +18,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
 
-import heroImg from "@/assets/photos/maps-cover.jpg";
-import aerialImg from "@/assets/photos/vieux-bassin-aerial.webp";
-import sailboatsImg from "@/assets/photos/vieux-bassin-sailboats.webp";
-import quayImg from "@/assets/photos/carousel-quay.webp";
-import locksImg from "@/assets/photos/locks-aerial.webp";
 
 const GOOGLE_MAPS_PLACE_URL =
   "https://www.google.com/maps/place/Port+of+Honfleur/@49.4200932,0.2302941,17z/data=!4m6!3m5!1s0x47e033bbbc1fa09f:0xb3180f46d65c5a9a!8m2!3d49.4200897!4d0.2328744!16s%2Fg%2F1q5bw1t4q";
@@ -50,14 +35,6 @@ function SectionTitle({ kicker, title, desc }: { kicker: string; title: string; 
       </div>
       <h2 className="text-balance text-3xl font-semibold tracking-tight md:text-4xl">{title}</h2>
       <p className="max-w-2xl text-sm leading-relaxed text-muted-foreground md:text-base">{desc}</p>
-    </div>
-  );
-}
-
-function Stamp({ children }: { children: React.ReactNode }) {
-  return (
-    <div className="inline-flex items-center gap-2 rounded-full border border-border/70 bg-secondary/70 px-3 py-1 text-xs text-foreground/90">
-      {children}
     </div>
   );
 }
@@ -92,19 +69,6 @@ export default function Home() {
     };
   }, [i18n]);
 
-  const gallery = useMemo(
-    () => [
-      { src: heroImg, alt: t("hero.title"), tag: "Google Maps" },
-      { src: sailboatsImg, alt: t("photos.alt_sailboats"), tag: "公开来源" },
-      { src: quayImg, alt: t("photos.alt_quay"), tag: "公开来源" },
-      { src: aerialImg, alt: t("photos.alt_aerial"), tag: "公开来源" },
-      { src: locksImg, alt: t("photos.alt_locks"), tag: "公开来源" },
-    ],
-    [t]
-  );
-
-  const reviewsListRaw = t("reviews.reviews_list", { returnObjects: true, defaultValue: [] as any }) as unknown;
-  const reviewsList = Array.isArray(reviewsListRaw) ? reviewsListRaw : [];
 
   return (
     <div className="min-h-screen bg-background text-foreground grain">
@@ -113,15 +77,14 @@ export default function Home() {
         <meta name="description" content={heroDescription} />
         <meta property="og:title" content={homeTitle} />
         <meta property="og:description" content={heroDescription} />
-        <meta property="og:image" content={heroImg} />
-        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:card" content="summary" />
       </Helmet>
 
       {/* Top Nav */}
       <header className="sticky top-0 z-40 border-b border-border/70 bg-background/70 backdrop-blur-md">
-        <div className="mx-auto flex w-full max-w-6xl items-center justify-between gap-4 px-5 py-3 md:px-8">
-          <div className="flex items-center gap-3">
-            <div className="grid h-10 w-10 place-items-center rounded-xl bg-primary text-primary-foreground paper-shadow">
+        <div className="mx-auto flex w-full max-w-6xl flex-wrap items-center justify-between gap-4 px-5 py-3 md:px-8">
+          <div className="flex min-w-0 max-w-full items-center gap-3">
+            <div className="grid shrink-0 h-10 w-10 place-items-center rounded-xl bg-primary text-primary-foreground paper-shadow">
               <Anchor className="h-5 w-5" />
             </div>
             <div className="min-w-0">
@@ -130,7 +93,7 @@ export default function Home() {
             </div>
           </div>
 
-          <nav className="hidden items-center gap-2 md:flex">
+          <nav className="order-last flex w-full flex-wrap items-center gap-x-4 gap-y-2 md:order-none md:w-auto">
             <a className="text-sm text-muted-foreground hover:text-foreground" href="#overview">
               {t("nav.overview")}
             </a>
@@ -148,9 +111,9 @@ export default function Home() {
             </a>
           </nav>
 
-          <div className="flex items-center gap-2">
-            <a href={GOOGLE_MAPS_PLACE_URL} target="_blank" rel="noreferrer">
-              <Button className="gap-2 bg-primary text-primary-foreground hover:bg-primary/90">
+          <div className="w-full sm:w-auto">
+            <a className="block" href={GOOGLE_MAPS_PLACE_URL} target="_blank" rel="noreferrer">
+              <Button className="w-full gap-2 bg-primary text-primary-foreground hover:bg-primary/90">
                 <Navigation className="h-4 w-4" />
                 {t("hero.google_maps")}
                 <ArrowUpRight className="h-4 w-4" />
@@ -165,7 +128,7 @@ export default function Home() {
         <div
           className="absolute inset-0 -z-10"
           style={{
-            backgroundImage: `url(${heroImg})`,
+            backgroundImage: "linear-gradient(130deg, #c3d8d1, #e5dbc8)",
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
@@ -181,16 +144,7 @@ export default function Home() {
           >
             <div className="flex flex-col gap-5">
               <div className="flex flex-wrap items-center gap-2">
-                <Stamp>
-                  <Star className="h-3.5 w-3.5 text-accent" />
-                  <span className="font-semibold">4.6</span>
-                  <span className="text-muted-foreground">/ 5</span>
-                </Stamp>
-                <Stamp>
-                  <Quote className="h-3.5 w-3.5" />
-                  <span className="font-semibold">25,011</span>
-                  <span className="text-muted-foreground">{t("hero.reviews_count", { count: 25011, defaultValue: "{{count}} Google Reviews" })}</span>
-                </Stamp>
+
                 <Badge variant="secondary" className="border border-border/70 bg-secondary/70">
                   Marina
                 </Badge>
@@ -260,20 +214,15 @@ export default function Home() {
                       <div className="text-sm font-semibold">{t("facts.phone")}</div>
                       <a
                         className="text-sm text-muted-foreground underline-offset-4 hover:underline"
-                        href="tel:+33650894051"
+                        href="tel:+33231491917"
                       >
-                        +33 6 50 89 40 51
+                        +33 2 31 49 19 17
                       </a>
+                      <p><a className="text-xs underline" href="https://www.portsducalvados.fr/en/ports/honfleur/">Ports du Calvados</a></p>
                     </div>
                   </div>
 
-                  <div className="rounded-xl border border-border/70 bg-secondary/60 p-4">
-                    <div className="text-xs text-muted-foreground">Plus Code</div>
-                    <div className="mt-1 font-semibold">C6CM+24 Honfleur, France</div>
-                    <p className="mt-2 text-xs text-muted-foreground">
-                      {t("facts.plus_code_desc")}
-                    </p>
-                  </div>
+
                 </div>
 
                 <Separator className="my-5" />
@@ -318,132 +267,20 @@ export default function Home() {
         </section>
       )}
 
-      {/* Photos */}
-      <section id="photos" className="mx-auto w-full max-w-6xl px-5 py-14 md:px-8">
-        <SectionTitle
-          kicker={t("photos.kicker")}
-          title={t("photos.title")}
-          desc={t("photos.desc")}
-        />
-
-        <div className="mt-8">
-          <Card className="paper-shadow border-border/70 bg-card/75 p-5 md:p-6">
-            <Carousel opts={{ align: "start", loop: true }}>
-              <CarouselContent>
-                {gallery.map((img) => (
-                  <CarouselItem key={img.alt} className="md:basis-1/2">
-                    <div className="group relative overflow-hidden rounded-2xl border border-border/70 bg-background">
-                      <img
-                        src={img.src}
-                        alt={img.alt}
-                        className="h-72 w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
-                        loading="lazy"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-background/85 via-transparent to-transparent" />
-                      <div className="absolute bottom-3 left-3 right-3 z-10 flex items-end justify-between gap-3">
-                        <div className="min-w-0">
-                          <div className="truncate text-sm font-semibold">{img.alt}</div>
-                          <div className="mt-1 text-xs text-muted-foreground">
-                            {t("photos.source", { tag: img.tag })}
-                          </div>
-                        </div>
-                        <Badge className="bg-primary text-primary-foreground">PHOTO</Badge>
-                      </div>
-                    </div>
-                  </CarouselItem>
-                ))}
-              </CarouselContent>
-              <CarouselPrevious />
-              <CarouselNext />
-            </Carousel>
-          </Card>
-        </div>
+      <section id="photos" className="mx-auto max-w-6xl px-5 py-12 md:px-8">
+        <a href={GOOGLE_MAPS_PLACE_URL} target="_blank" rel="noreferrer" className="underline">{t("hero.google_maps")}</a>
       </section>
-
-      {/* Reviews */}
-      <section id="reviews" className="clip-wave bg-secondary/55 py-14 md:py-16">
-        <div className="mx-auto w-full max-w-6xl px-5 md:px-8">
-          <SectionTitle
-            kicker={t("reviews.kicker")}
-            title={t("reviews.title")}
-            desc={t("reviews.desc")}
-          />
-
-          <div className="mt-8 grid gap-5 md:grid-cols-3">
-            <Card className="paper-shadow border-border/70 bg-card/80 p-5">
-              <div className="flex items-start justify-between gap-3">
-                <div>
-                  <div className="text-xs text-muted-foreground">{t("reviews.rating_title")}</div>
-                  <div className="mt-1 flex items-center gap-2">
-                    <div className="text-3xl font-semibold">4.6</div>
-                    <Star className="h-5 w-5 text-accent" />
-                  </div>
-                </div>
-                <Badge className="bg-accent text-accent-foreground">STAMP</Badge>
-              </div>
-              <p className="mt-3 text-sm text-muted-foreground">
-                {t("reviews.rating_desc")}
-              </p>
-            </Card>
-
-            <Card className="paper-shadow border-border/70 bg-card/80 p-5">
-              <div className="text-xs text-muted-foreground">{t("reviews.count_title")}</div>
-              <div className="mt-1 text-3xl font-semibold">25,011</div>
-              <p className="mt-3 text-sm text-muted-foreground">
-                {t("reviews.count_desc")}
-              </p>
-            </Card>
-
-            <Card className="paper-shadow border-border/70 bg-card/80 p-5">
-              <div className="flex items-start gap-3">
-                <div className="rounded-xl bg-primary p-3 text-primary-foreground">
-                  <Quote className="h-5 w-5" />
-                </div>
-                <div>
-                  <div className="text-sm font-semibold">{t("reviews.cta_title")}</div>
-                  <p className="mt-1 text-sm text-muted-foreground">
-                    {t("reviews.cta_desc")}
-                  </p>
-                </div>
-              </div>
-              <a className="mt-4 inline-block" href={GOOGLE_MAPS_PLACE_URL} target="_blank" rel="noreferrer">
-                <Button className="w-full gap-2" variant="outline">
-                  {t("reviews.cta_button")}
-                  <ArrowUpRight className="h-4 w-4" />
-                </Button>
-              </a>
-            </Card>
-          </div>
-
-          <div className="mt-8 grid gap-5 md:grid-cols-2">
-            {reviewsList.map((review: any, idx: number) => (
-              <Card key={idx} className="paper-shadow border-border/70 bg-background/70 p-5">
-                <div className="flex items-start gap-3">
-                  <div className="mt-0.5 rounded-xl border border-border/70 bg-secondary/60 p-3">
-                    <Quote className="h-4 w-4" />
-                  </div>
-                  <div className="min-w-0 flex-1">
-                    <div className="flex items-center justify-between gap-2">
-                      <div className="text-sm font-bold">{review.author}</div>
-                      <div className="flex items-center gap-1">
-                        <Star className="h-3 w-3 text-accent fill-accent" />
-                        <span className="text-xs font-semibold">{review.rating}</span>
-                      </div>
-                    </div>
-                    <div className="text-[10px] text-muted-foreground mt-0.5">{review.role}</div>
-                    <div className="text-[10px] text-muted-foreground">{review.date}</div>
-                    <p className="mt-3 text-sm leading-relaxed text-foreground/90 italic">
-                      "{review.content}"
-                    </p>
-                    <div className="mt-3 text-[10px] font-medium text-accent/80">
-                      {review.visited}
-                    </div>
-                  </div>
-                </div>
-              </Card>
-            ))}
-          </div>
-        </div>
+      <section id="reviews" className="mx-auto max-w-6xl px-5 pb-12 md:px-8">
+        <a href={GOOGLE_MAPS_PLACE_URL} target="_blank" rel="noreferrer" className="underline">{t("reviews.cta_button")}</a>
+      </section>
+      <section className="mx-auto max-w-6xl px-5 py-12 md:px-8">
+        <h2 className="text-3xl font-semibold">{isFrench ? "Guides pratiques" : "Practical guides"}</h2>
+        <ul className="mt-5 grid gap-4 md:grid-cols-2">
+          <li><a className="underline" href="/fr/parking-honfleur" lang="fr">Parking à Honfleur (FR)</a></li>
+          <li><a className="underline" href="/fr/honfleur-sans-voiture" lang="fr">Honfleur sans voiture (FR)</a></li>
+          <li><a className="underline" href="/en/honfleur-marina" lang="en">Honfleur marina: visiting boat arrivals (EN)</a></li>
+          <li><a className="underline" href="/en/honfleur-cruise-port" lang="en">Honfleur cruise port: transfers and time ashore (EN)</a></li>
+        </ul>
       </section>
 
       {/* Map */}
