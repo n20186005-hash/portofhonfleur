@@ -85,6 +85,18 @@
     "disclaimer_desc": "Dieser unabhängige Reiseführer ist weder mit dem Hafen noch mit der Stadt oder dem Tourismusbüro verbunden.",
     "disclaimer_official": "Aktuelle Besucherinformationen beim zuständigen Betreiber prüfen.",
     "content_desc": "Die redaktionellen Hinweise dienen der Reiseplanung. Externe Inhalte unterliegen den Bedingungen ihrer Rechteinhaber.",
-    "disclaimer_official_link": "Offizielle Besucherinformationen des Tourismusbüros prüfen."
+    "disclaimer_official_link": "Offizielle Besucherinformationen des Tourismusbüros prüfen.",
+    "title": "Nutzungsbedingungen"
+  },
+  "metadata": {
+    "privacy_description": "Wie dieser unabhängige Honfleur-Reiseführer lokale Einstellungen und externe Inhalte wie Google Maps verwendet.",
+    "terms_description": "Bedingungen für die Nutzung des unabhängigen Honfleur-Reiseführers, redaktioneller Informationen und externer Links.",
+    "cookies_description": "Informationen zu Browsereinstellungen, eingebetteten Google-Karten und zur Verwaltung von Cookies im Browser."
+  },
+  "privacy": {
+    "title": "Datenschutz"
+  },
+  "cookies": {
+    "title": "Cookie-Informationen"
   }
 }

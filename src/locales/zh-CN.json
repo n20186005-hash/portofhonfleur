@@ -69,7 +69,7 @@
     "data_source": "独立旅行指南；外部服务自行发布和管理其信息。"
   },
   "privacy": {
-    "title": "隐私政策",
+    "title": "隐私说明",
     "last_updated": "最后更新：{{date}}",
     "overview": "概览",
     "overview_desc": "本页面用于说明本网站如何处理信息。本网站为静态景点介绍页，不提供账号注册，不要求登录。",
@@ -84,7 +84,7 @@
     "contact_desc": "如对隐私相关问题有疑问，请通过页面页脚提供的技术支持邮箱联系。"
   },
   "terms": {
-    "title": "服务条款",
+    "title": "使用条款",
     "last_updated": "最后更新：{{date}}",
     "use_terms": "使用条款",
     "use_terms_desc": "访问本网站即表示您同意这些基本服务条款。本网站仅用于信息展示与旅行参考目的。",
@@ -102,7 +102,7 @@
     "changes_desc": "我们保留随时更新这些条款的权利。重大变更将反映在「最后更新」日期中。"
   },
   "cookies": {
-    "title": "Cookie 设置",
+    "title": "Cookie说明",
     "last_updated": "最后更新：{{date}}",
     "what": "什么是 Cookie",
     "what_desc": "Cookie 是存储在您设备上的小文本文件，用于帮助网站运行或向网站所有者提供信息。",
@@ -129,5 +129,10 @@
       "description": "预订前核对自己的实际开销。",
       "content": "分别列出往返交通、可能需要的住宿、停车、餐饮与收费参观费用。按日期、人数向运营方确认价格，旧文章中的预算不能保证适用于这次旅行。\n\n## 决定支出重点\n\n先选最重要的参观活动，再比较其余费用，并为交通变更预留备用金。不要默认停车免费、早鸟票有余位，也不要把固定金额当成适合所有人的总预算。\n\n[Office de Tourisme de Honfleur](https://www.ot-honfleur.fr/preparez-votre-sejour/pratique/comment-venir/) · [Parkings / Parking](https://www.ville-honfleur.com/vivre-a-honfleur/vie-quotidienne/parkings/)"
     }
+  },
+  "metadata": {
+    "privacy_description": "了解本独立翁弗勒尔旅行指南如何使用本地偏好设置，以及 Google 地图等第三方内容。",
+    "terms_description": "本独立翁弗勒尔旅行指南的使用条件、编辑信息及外部链接说明。",
+    "cookies_description": "了解浏览器偏好设置、嵌入式 Google 地图，以及如何在浏览器中管理Cookie。"
   }
 }

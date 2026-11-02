@@ -34,7 +34,7 @@ export default function Blog() {
   return (
     <>
       <Helmet>
-        <title>{t("blog.title")} | Port of Honfleur</title>
+        <title>{`${t("blog.title")} | Port of Honfleur`}</title>
         <meta name="description" content={t("blog.desc")} />
       </Helmet>
 

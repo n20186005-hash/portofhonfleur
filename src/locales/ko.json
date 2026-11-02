@@ -85,6 +85,18 @@
     "disclaimer_desc": "이 독립 안내 사이트는 항구, 시청 또는 관광안내소와 제휴하지 않습니다.",
     "disclaimer_official": "최신 방문 정보는 해당 운영자에게 확인하세요.",
     "content_desc": "편집 안내는 여행 계획을 위한 참고 정보입니다. 외부 자료에는 권리자의 조건이 적용됩니다.",
-    "disclaimer_official_link": "관광안내소의 공식 방문 정보를 확인하세요."
+    "disclaimer_official_link": "관광안내소의 공식 방문 정보를 확인하세요.",
+    "title": "이용 조건"
+  },
+  "metadata": {
+    "privacy_description": "독립적인 옹플뢰르 여행 안내의 로컬 설정과 Google 지도 등 외부 콘텐츠 사용을 안내합니다.",
+    "terms_description": "독립 옹플뢰르 여행 안내의 편집 정보와 외부 링크를 이용할 때의 조건을 확인하세요.",
+    "cookies_description": "브라우저 설정, 삽입된 Google 지도와 브라우저의 쿠키 관리에 관한 안내입니다."
+  },
+  "privacy": {
+    "title": "개인정보 안내"
+  },
+  "cookies": {
+    "title": "쿠키 안내"
   }
 }

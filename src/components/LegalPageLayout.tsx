@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import type { ReactNode } from "react";
 import { Link } from "wouter";
 import { ArrowLeft, Anchor, Shield, FileText, Cookie } from "lucide-react";
@@ -7,6 +8,7 @@ import { useTranslation } from "react-i18next";
 
 interface LegalPageLayoutProps {
   title: string;
+  description: string;
   icon: ReactNode;
   lastUpdated: string;
   children: ReactNode;
@@ -17,6 +19,7 @@ const FOOTER_SUPPORT_TEXT =
 
 export default function LegalPageLayout({
   title,
+  description,
   icon,
   lastUpdated,
   children,
@@ -25,12 +28,18 @@ export default function LegalPageLayout({
 
   return (
     <div className="min-h-screen bg-background text-foreground grain">
+      <Helmet>
+        <title>{`${title} | Port of Honfleur`}</title>
+        <meta name="description" content={description} />
+        <meta property="og:title" content={`${title} | Port of Honfleur`} />
+        <meta property="og:description" content={description} />
+      </Helmet>
       <div className="mx-auto w-full max-w-5xl px-5 py-10 md:px-8">
         <div className="flex items-center justify-between gap-4">
           <Link href="/">
             <Button variant="outline" className="gap-2">
               <ArrowLeft className="h-4 w-4" />
-              返回首页
+              {t("nav.overview")}
             </Button>
           </Link>
 
@@ -48,7 +57,7 @@ export default function LegalPageLayout({
                 <h1 className="text-balance text-3xl font-semibold tracking-tight md:text-4xl">
                   {title}
                 </h1>
-                <p className="mt-2 text-sm text-muted-foreground">最后更新：{lastUpdated}</p>
+                <p className="mt-2 text-sm text-muted-foreground">{t("privacy.last_updated", { date: lastUpdated })}</p>
               </div>
             </div>
           </div>
@@ -65,17 +74,17 @@ export default function LegalPageLayout({
         <div className="mt-10 flex flex-wrap gap-3">
           <Link href="/privacy">
             <Button variant="ghost" className="gap-2">
-              <Shield className="h-4 w-4" /> Privacy Policy
+              <Shield className="h-4 w-4" /> {t("privacy.title")}
             </Button>
           </Link>
           <Link href="/terms">
             <Button variant="ghost" className="gap-2">
-              <FileText className="h-4 w-4" /> Terms of Service
+              <FileText className="h-4 w-4" /> {t("terms.title")}
             </Button>
           </Link>
           <Link href="/cookies">
             <Button variant="ghost" className="gap-2">
-              <Cookie className="h-4 w-4" /> Cookie Settings
+              <Cookie className="h-4 w-4" /> {t("cookies.title")}
             </Button>
           </Link>
         </div>

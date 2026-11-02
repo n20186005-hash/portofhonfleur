@@ -6,6 +6,7 @@ export default function TermsOfService() {
   return (
     <LegalPageLayout
       title={t("terms.title")}
+      description={t("metadata.terms_description")}
       icon={LegalIcons.terms}
       lastUpdated="2026-11-02"
     >
