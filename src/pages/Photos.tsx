@@ -10,7 +10,7 @@ export default function Photos() {
   return (
     <>
       <Helmet>
-        <title>{t("photos.title")} | Port of Honfleur</title>
+        <title>{`${t("photos.title")} | Port of Honfleur`}</title>
         <meta name="description" content={t("photos.desc")} />
       </Helmet>
 

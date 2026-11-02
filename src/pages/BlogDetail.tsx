@@ -53,7 +53,7 @@ export default function BlogDetail() {
   return (
     <>
       <Helmet>
-        <title>{blog.title} | Port of Honfleur</title>
+        <title>{`${blog.title} | Port of Honfleur`}</title>
         <meta name="description" content={blog.description} />
         <meta property="og:title" content={`${blog.title} | Port of Honfleur`} />
         <meta property="og:description" content={blog.description} />

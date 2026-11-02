@@ -6,6 +6,7 @@ export default function CookieSettings() {
   return (
     <LegalPageLayout
       title={t("cookies.title")}
+      description={t("metadata.cookies_description")}
       icon={LegalIcons.cookies}
       lastUpdated="2026-03-20"
     >

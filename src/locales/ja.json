@@ -89,6 +89,18 @@
     "disclaimer_desc": "この独立ガイドは、港、市役所、観光局と提携していません。",
     "disclaimer_official": "最新の訪問情報は該当する運営者に確認してください。",
     "content_desc": "編集上の助言は旅行計画の参考情報です。外部資料には権利者の条件が適用されます。",
-    "disclaimer_official_link": "観光局の公式訪問情報を確認してください。"
+    "disclaimer_official_link": "観光局の公式訪問情報を確認してください。",
+    "title": "利用条件"
+  },
+  "metadata": {
+    "privacy_description": "独立したオンフルール観光ガイドのローカル設定と、Google マップなど外部コンテンツの利用について。",
+    "terms_description": "独立したオンフルール観光ガイドの編集情報と外部リンクを利用する際の条件をご案内します。",
+    "cookies_description": "ブラウザー設定、埋め込み Google マップ、ブラウザーでの Cookie 管理についてのご案内。"
+  },
+  "privacy": {
+    "title": "プライバシー"
+  },
+  "cookies": {
+    "title": "Cookieについて"
   }
 }

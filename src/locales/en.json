@@ -93,7 +93,7 @@
     "changes_desc": "We reserve the right to update these terms at any time. Significant changes will be reflected in the 'Last Updated' date."
   },
   "cookies": {
-    "title": "Cookie Settings",
+    "title": "Cookie Information",
     "last_updated": "Last Updated: {{date}}",
     "what": "What are Cookies",
     "what_desc": "Cookies are small text files stored on your device to help the website function or provide information to the site owners.",
@@ -120,5 +120,10 @@
       "description": "Compare your actual costs before booking.",
       "content": "List return transport, accommodation if needed, parking, meals and any paid visits separately. Check the operator’s price for your date and party; an old travel article cannot guarantee your total.\n\n## Choose where to spend\n\nDecide which visit matters most, then compare options for the remaining costs. Keep a contingency for changed transport. Do not assume parking is free or that a promotional ticket is available.\n\n[Office de Tourisme de Honfleur](https://www.ot-honfleur.fr/preparez-votre-sejour/pratique/comment-venir/) · [Parkings / Parking](https://www.ville-honfleur.com/vivre-a-honfleur/vie-quotidienne/parkings/)"
     }
+  },
+  "metadata": {
+    "privacy_description": "How this independent Honfleur guide uses local preferences and third-party content, including Google Maps.",
+    "terms_description": "Conditions for using the independent Port of Honfleur guide, editorial information and external links.",
+    "cookies_description": "Information about browser preferences, embedded Google Maps content and managing cookies in your browser."
   }
 }

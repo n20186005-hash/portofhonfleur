@@ -11,7 +11,7 @@ export default function Map() {
   return (
     <>
       <Helmet>
-        <title>{t("map.title")} | Port of Honfleur</title>
+        <title>{`${t("map.title")} | Port of Honfleur`}</title>
         <meta name="description" content={t("map.desc")} />
       </Helmet>
 

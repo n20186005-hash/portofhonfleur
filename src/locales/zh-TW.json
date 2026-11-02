@@ -85,6 +85,18 @@
     "disclaimer_desc": "本獨立指南與港口、市政府及旅遊局沒有隸屬或合作關係。",
     "disclaimer_official": "最新參觀安排請向相應營運方確認。",
     "content_desc": "本站編輯建議供旅行規劃參考；外部資料的使用遵循其權利方的條件。",
-    "disclaimer_official_link": "請查閱旅遊局的官方參觀資訊。"
+    "disclaimer_official_link": "請查閱旅遊局的官方參觀資訊。",
+    "title": "使用條款"
+  },
+  "metadata": {
+    "privacy_description": "了解本獨立翁弗勒爾旅行指南如何使用本機偏好設定，以及 Google 地圖等第三方內容。",
+    "terms_description": "本獨立翁弗勒爾旅行指南的使用條件、編輯資訊及外部連結說明。",
+    "cookies_description": "了解瀏覽器偏好設定、嵌入式 Google 地圖，以及如何在瀏覽器中管理Cookie。"
+  },
+  "privacy": {
+    "title": "隱私說明"
+  },
+  "cookies": {
+    "title": "Cookie說明"
   }
 }

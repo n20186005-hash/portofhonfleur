@@ -85,6 +85,18 @@
     "disclaimer_desc": "Esta guía independiente no está afiliada al puerto, al ayuntamiento ni a la oficina de turismo.",
     "disclaimer_official": "Consulte la información actual con el operador correspondiente.",
     "content_desc": "Los consejos editoriales ayudan a preparar la visita. Los materiales externos están sujetos a las condiciones de sus titulares.",
-    "disclaimer_official_link": "Consulte la información oficial de la oficina de turismo."
+    "disclaimer_official_link": "Consulte la información oficial de la oficina de turismo.",
+    "title": "Condiciones de uso"
+  },
+  "metadata": {
+    "privacy_description": "Cómo esta guía independiente de Honfleur utiliza preferencias locales y contenidos de terceros, incluido Google Maps.",
+    "terms_description": "Condiciones de uso de la guía independiente de Honfleur, su información editorial y sus enlaces externos.",
+    "cookies_description": "Información sobre preferencias del navegador, mapas de Google integrados y gestión de cookies."
+  },
+  "privacy": {
+    "title": "Privacidad"
+  },
+  "cookies": {
+    "title": "Información sobre cookies"
   }
 }
