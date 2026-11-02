@@ -40,12 +40,13 @@ export function FloatingSwitcher() {
     if (cleanPath === '//') cleanPath = '/';
     if (!cleanPath.startsWith('/')) cleanPath = '/' + cleanPath;
     
+    if (cleanPath === '/que-faire-honfleur' && code !== 'fr') cleanPath = '/';
     const newPath = `/${code.toLowerCase()}${cleanPath === '/' ? '' : cleanPath}${window.location.search}${window.location.hash}`;
-    window.location.href = newPath;
+    window.location.assign(newPath);
   };
 
   return (
-    <div className="fixed top-20 right-4 z-50 flex flex-col gap-2 md:top-24 md:right-8">
+    <div className="flex justify-end gap-2 px-4 py-3 md:fixed md:top-24 md:right-8 md:z-50 md:flex-col md:p-0">
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
           <Button

@@ -26,7 +26,6 @@ function generateSitemap() {
   let xml = `<?xml version="1.0" encoding="UTF-8"?>\n`;
   xml += `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n`;
 
-  const today = new Date().toISOString().split('T')[0];
 
   // For each language and path combination
   for (const entry of PATHS) {
@@ -39,7 +38,6 @@ function generateSitemap() {
       
       xml += `  <url>\n`;
       xml += `    <loc>${url}</loc>\n`;
-      xml += `    <lastmod>${today}</lastmod>\n`;
       
       // Add hreflang links for all other languages + x-default
       xml += `    <xhtml:link rel="alternate" hreflang="x-default" href="${xDefaultUrl}" />\n`;
@@ -56,7 +54,6 @@ function generateSitemap() {
     const url = `${DOMAIN}${entry.path || "/"}`;
     xml += `  <url>\n`;
     xml += `    <loc>${url}</loc>\n`;
-    xml += `    <lastmod>${today}</lastmod>\n`;
     xml += `    <xhtml:link rel="alternate" hreflang="x-default" href="${url}" />\n`;
     for (const altLang of entry.languages) {
       xml += `    <xhtml:link rel="alternate" hreflang="${altLang}" href="${DOMAIN}/${altLang}${entry.path}" />\n`;

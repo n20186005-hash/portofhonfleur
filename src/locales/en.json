@@ -19,55 +19,22 @@
     "title": "QUICK FACTS",
     "address": "Address",
     "hours": "Opening Hours",
-    "hours_value": "24 Hours Open",
-    "phone": "Phone",
+    "hours_value": "Confirm service hours with the operator",
+    "phone": "Harbour operator",
     "plus_code_desc": "Short code for positioning, suitable for quick retrieval in navigation apps.",
     "view_more": "Full Reviews & More Photos"
   },
   "photos": {
-    "kicker": "PHOTO COLLAGE",
-    "title": "Photo Collage: Capture the Port",
-    "desc": "We prioritize real photos from Google Maps and public travel info to create a 'poster-style' gallery.",
-    "source": "Source: {{tag}}",
-    "alt_sailboats": "Sailboats and buildings at Vieux Bassin",
-    "alt_quay": "Quay and Carousel (Hotel de Ville)",
-    "alt_aerial": "Aerial view of Honfleur Old Port",
-    "alt_locks": "Aerial view of harbor locks and channel"
+    "title": "Photographing Honfleur responsibly",
+    "desc": "Prepare a flexible photo walk around the harbour."
   },
   "reviews": {
-    "kicker": "VOICE & IMPRESSION",
-    "title": "Reviews & Experience: Shared Feelings",
-    "desc": "We have retrieved the rating and number of reviews from Google Maps. Due to limitations, we provide verified info and direct links here.",
-    "rating_title": "Rating",
-    "rating_desc": "Rating and review count from Google Maps.",
-    "count_title": "Reviews Count",
-    "count_desc": "A high number of reviews means you can see photos and suggestions from many visitors across seasons.",
-    "cta_title": "Want to see specific reviews?",
-    "cta_desc": "We provide direct links to ensure you see the latest and complete real reviews.",
-    "cta_button": "Open Google Maps Reviews",
-    "reviews_list": [
-      {
-        "author": "Gillian",
-        "role": "Local Guide · 361 reviews · 1,295 photos",
-        "rating": "5.0",
-        "date": "4 months ago",
-        "content": "Such a delightful town. So pretty with interesting buildings round the marina. Full of restaurants, cafes, art galleries and of course souvenir shops. Saturday morning there is a market. An interesting wooden church is in the centre. Well worth a visit.",
-        "visited": "Visited in October 2025"
-      },
-      {
-        "author": "simon parnell",
-        "role": "Local Guide · 55 reviews · 37 photos",
-        "rating": "5.0",
-        "date": "4 months ago",
-        "content": "This is an excellent place to visit. We were on a cruise so only had a day to visit, but it is a pretty place. Lots to do and visit, especially the wooden church (Eglise Sainte Catherine) and the Chappelle Notre Dame de Grace with it's bells. Plus e enjoyed oysters, whelks and king prawns with a drink relaxing looking over the Le Vieux Bassin.",
-        "visited": "Visited in November 2025"
-      }
-    ]
+    "cta_button": "Open Google Maps Reviews"
   },
   "map": {
     "kicker": "LOCATION",
     "title": "Map & Directions",
-    "desc": "Use the Google Maps embed code. You can also open the map in a new window for route planning and sharing.",
+    "desc": "View the harbour location and plan your route in Google Maps.",
     "tips_title": "Visiting Tips",
     "tips_desc": "The old town of Honfleur is best explored on foot. It is recommended to park in the outer parking lots and walk along the harbor to Vieux Bassin.",
     "golden_hour": "Golden Hour",
@@ -81,7 +48,7 @@
   "blog": {
     "kicker": "BLOG SPACE",
     "title": "Blog",
-    "desc": "Travel guides, best photo spots, restaurant picks, seasonal recommendations, and more.",
+    "desc": "Choose your priorities before setting a schedule.",
     "read_button": "Read"
   },
   "footer": {
@@ -89,8 +56,8 @@
     "built_as": "Built as a static scenic page.",
     "rights": "All rights reserved.",
     "disclaimer_title": "Independent Third-Party Travel Guide",
-    "disclaimer_content": "This website is an independent third-party travel information guide. It is not affiliated with, endorsed by, or connected to the official management bodies of Port of Honfleur. For official tickets and information, please visit official channels.",
-    "data_source": "Information is extracted from public resources (Honfleur Tourist Office and Wikipedia), combined with basic information from Google Maps."
+    "disclaimer_content": "This independent guide is not affiliated with the harbour, town council or tourist office.",
+    "data_source": "Independent visitor guidance; external services publish their own information."
   },
   "privacy": {
     "title": "Privacy Policy",
@@ -113,12 +80,12 @@
     "use_terms": "Use Terms",
     "use_terms_desc": "By accessing this website, you agree to these basic terms of service. This website is for informational and travel reference purposes only.",
     "content": "Content Ownership",
-    "content_desc": "The photos on this website come from public sources or the Google Maps location page, and their rights belong to the original authors.",
+    "content_desc": "Editorial guidance is provided for trip planning. External materials remain subject to their owners’ terms.",
     "disclaimer": "Disclaimer",
     "disclaimer_title": "Independent Third-Party Travel Guide",
-    "disclaimer_desc": "This website is an independent third-party travel information guide designed to provide visitors with objective historical background and sightseeing recommendations. This site is not affiliated with, endorsed by, or connected to the official management or administrative bodies of Port of Honfleur. We aim to offer neutral, factual information to help travelers plan their visits.",
-    "disclaimer_official": "For official tickets, tours, and authoritative information:",
-    "disclaimer_official_link": "Please visit the official Port of Honfleur website or contact the local tourism board directly.",
+    "disclaimer_desc": "This independent guide is not affiliated with the harbour, town council or tourist office.",
+    "disclaimer_official": "Consult the relevant operator for current visitor information.",
+    "disclaimer_official_link": "Check the tourist office’s official visitor information.",
     "disclaimer_data": "While we strive to provide accurate information, we are not responsible for the absolute accuracy or timeliness of external data (such as Google Maps ratings, business hours).",
     "links": "External Links",
     "links_desc": "This website contains links to external sites (such as Google Maps). We are not responsible for the content or privacy practices of these sites.",
@@ -139,24 +106,19 @@
   },
   "blogs_content": {
     "post1": {
-      "title": "Millennium Harbor Record | Comprehensive In-depth Travel Guide to Port of Honfleur",
-      "description": "A panoramic, practical guide to understand Honfleur and explore it efficiently.",
-      "content": "When it comes to coastal towns in Normandy, most travelers flock to bustling seaside destinations, but Port of Honfleur has always remained hidden in the quiet corner of the Seine estuary, preserving a thousand years of maritime history and Impressionist art heritage. This comprehensive guide provides authentic travel insights, starting with the real logic of on-site exploration, thoroughly explaining the core value of this ancient port, then following complete itineraries for transportation, sightseeing, dining, and avoiding common pitfalls—blending all practical information into smooth narratives with both authoritative historical context and actionable details, perfect for first-time visitors seeking to fully understand Honfleur.\n\n### 1. Understanding Honfleur: More than just an Instagram spot, but Normandy's living heritage\n\nPort of Honfleur is located at the confluence of the Seine River and the English Channel, founded in the 11th century. From a medieval trading port to the starting point of explorer Champlain's voyage to the New World in the 16th century, to the creative cradle of Impressionist masters, this small town has weathered centuries while preserving its original charm. Unlike overly commercialized coastal attractions, you'll find no crowded tour groups here, no overpriced souvenir shops. In the crescent-shaped Vieux Bassin (Old Port), colorful half-timbered houses line the waterfront, with perfect water reflections complementing the architecture, plus the all-wooden Sainte-Catherine Church—one of Europe's rare wooden churches—every scene exudes authentic French romance.\n\nAs a French National Historic Monument and core cultural heritage site, among over 23,000 authentic Google Maps reviews, nearly 90% of visitors mention \"far exceeding expectations for peaceful healing,\" \"no commercial hustle,\" and \"every photo looks like a postcard.\" This niche purity is precisely Honfleur's core charm, distinguishing it from any other coastal destination in France.\n\n### 2. Practical Transportation Guide: Tested comparisons of different travel methods\n\nAs a popular niche destination near Paris, most visitors choose to travel from Paris to Honfleur. Three main transportation methods each offer unique advantages. Based on time, cost, and convenience, here are tested comparisons covering budget travelers, independent explorers, and self-drive tourists.\n\n#### Train + Bus: The most cost-effective option for independent travel\n\nTake the train from Paris Saint-Lazare station to Le Havre (1h40m journey, €25-35 one-way). Book early bird tickets on the official website 15 days in advance for as low as €19. After arriving at Le Havre station, transfer directly to local bus line 20, reaching Honfleur's old town in 30 minutes (€3 one-way). Total journey time 2h10m, total cost €28-38. No need to worry about driving routes or parking challenges—this is the optimal solution for most independent travelers.\n\n#### Self-drive: Maximum freedom and flexibility\n\nPerfect for groups wanting to experience Normandy scenery along the way. Drive along the A13 highway (195km total, 2 hours normal driving, €15 toll). Three public parking lots surround the old town. The central Old Port parking fills quickly after 10 AM on weekends—instead choose the Môle parking lot (10-minute walk to Old Port, €6-8 daily), with better availability and lower rates. This practical tip comes highly recommended by local visitors.\n\n#### Bus: Ultimate budget transportation\n\nBudget travelers with flexible schedules can choose Flixbus (direct to Honfleur old town, 2h30m journey, €12-18 one-way, slightly higher during holidays). The only limitation: only 2-3 daily departures, requiring booking 3 days in advance to secure seats. While slightly longer, this offers the most affordable Paris-Honfleur roundtrip option.\n\nAfter arrival, no local transportation needed—Honfleur's old town is extremely walkable. Only for Normandy Bridge viewpoint visits, take bus line 1 (€1.5 one-way). Taxi starting fare €5, with maximum short-distance travel around town under €20.\n\n### 3. Timed Itinerary Routes: Customized based on duration\n\nBased on different trip durations, we've designed three optimized tour routes that follow actual walking patterns, eliminate unnecessary backtracking, and balance landmark visits, photography, and cultural experiences.\n\n#### 2-Hour Express Route: Perfect for short visits\n\nIdeal for day-trippers from Paris. Start at Old Port central square, visit Lieutenant's House, Sainte-Catherine Church main hall and bell tower, stroll the gallery street, then view the Maritime Museum. Entirely walkable, covering all key landmarks while quickly absorbing the town's atmosphere.\n\n#### 4-Hour Cultural Route: First choice for art and history lovers\n\nThis route avoids crowds, focusing on authentic cultural experiences. Capture morning reflections at the Old Port, explore the converted salt warehouse art district, visit local artists' studios, discover the Boudin Museum's Impressionist connections, experience Sainte-Catherine Church's interior, walk the old town defense walls, then visit Normandy Bridge viewpoint. On weekends, enjoy the local market for complete cultural immersion.\n\n#### Full-Day Immersive Experience: Deep cultural connection\n\nFor visitors wanting to slow down and experience local life. Photograph the serene Old Port at dawn, enjoy authentic Norman breakfast, explore cultural sites methodically, take a Seine River cruise for harbor perspectives, discover hidden alleyways, and truly connect with Honfleur's living heritage."
+      "title": "Plan your first Honfleur visit",
+      "description": "Choose your priorities before setting a schedule.",
+      "content": "Start with the Old Basin, then choose a further visit according to your time and interests. Keep a short list rather than trying to cover every suggestion.\n\n## Prepare the journey\n\nCheck your complete outward and return journey. Confirm transport, parking and opening arrangements with their operators. Leave room for delays instead of treating a suggested itinerary as a guaranteed schedule.\n\n[Office de Tourisme de Honfleur](https://www.ot-honfleur.fr/preparez-votre-sejour/pratique/comment-venir/) · [Parkings / Parking](https://www.ville-honfleur.com/vivre-a-honfleur/vie-quotidienne/parkings/)"
     },
     "post2": {
-      "title": "Light & Shadow Handbook | Honfleur Harbor Photography Guide",
-      "description": "A practical photography route guide for sunrise, daytime, and the blue hour.",
-      "content": "Port of Honfleur is renowned as \"the natural photography studio of Impressionism.\" Masters like Monet, Boudin, and Courbet created here, capturing the evolving light and shadow. Today, it remains a holy land for photography enthusiasts and cultural creators seeking authentic French landscape imagery. This guide provides practical photography routes organized by time of day, revealing secret spots, seasonal techniques, and essential avoidance tips—all based on real shooting experience for capturing masterpiece-quality images while avoiding crowded Instagram locations.\n\n### 1. Why Honfleur represents French photography excellence\n\nUnlike other French coastal destinations, Honfleur's scenery is naturally photogenic: the crescent harbor creates perfect symmetry, colorful architecture offers ideal color saturation, Seine estuary light provides soft illumination, water reflections align perfectly with structures, and minimal visual clutter ensures clean compositions. Whether landscape, documentary, or portrait photography, you can easily achieve that clean, sophisticated French painting aesthetic. Countless photographers on Google Maps note that the light here requires \"no editing for perfect results,\" especially during golden hours.\n\n### 2. All-day shooting timeline: Capture every perfect moment\n\n#### Early Morning Golden Hour (6:00-7:30, 5:30 in summer)\n\nThe only perfect time for water reflection photography. The harbor becomes completely calm with golden-pink light illuminating colorful buildings—no tourists or boats, 100% reflection clarity. Best spots: square opposite Lieutenant's House, western hidden pathway. Use wide-angle lenses, enable phone grid lines for alignment, shoot from low angles to avoid overexposure.\n\n#### Morning Soft Light (8:00-11:00)\n\nLight turns to soft side illumination with minimal shadows, perfect for architectural details and documentary photography. Recommended: Sainte-Catherine Church wooden structure, colorful house details north of Old Port. Capture local residents' daily activities for authentic human stories.\n\n#### Afternoon Backlight Silhouettes (15:00-17:30)\n\nBacklight conditions maximize transparency, creating golden sea surfaces and crisp architectural outlines. Ideal for landscape silhouettes and large-scene compositions. Best locations: Normandy Bridge western viewpoint, old town defense wall top.\n\n#### Blue Hour Magic (30min before to 20min after sunset)\n\nThe most crucial shooting period—deep blue skies contrast with warm harbor lights, water reflections amplify the beauty, completely replicating Monet's light quality. Essential: tripod for long exposures, lower ISO for quality. Arrive 20 minutes early during peak season."
+      "title": "Photographing Honfleur responsibly",
+      "description": "Prepare a flexible photo walk around the harbour.",
+      "content": "Choose a subject before choosing a camera setting: reflections, architectural details or the wider waterfront. Compare the same view from a few positions without blocking the quay.\n\n## Work with the conditions\n\nLook at the actual light and weather before committing to a viewpoint. Reflection quality depends on conditions. Respect private property and other visitors; no photograph justifies entering a restricted area.\n\n[Office de Tourisme de Honfleur](https://www.ot-honfleur.fr/preparez-votre-sejour/pratique/comment-venir/) · [Parkings / Parking](https://www.ville-honfleur.com/vivre-a-honfleur/vie-quotidienne/parkings/)"
     },
     "post3": {
-      "title": "Budget Practical Guide | Explore Honfleur Harbor with 100 Euros",
-      "description": "Save money without sacrificing the experience: transport, food, and free spots.",
-      "content": "Many assume French travel, especially coastal destinations, requires significant spending. Actually, Port of Honfleur offers high-quality experiences at low cost. This guide is designed for students, backpackers, and value-seeking travelers—featuring tested, affordable options that maintain authentic experiences while avoiding unnecessary expenses. All data comes from verified Google Maps reviews from local visitors.\n\n### 1. Budget travel principles: Value-focused experiences\n\nHonfleur's core charm—Old Port reflections, medieval architecture, cultural atmosphere—is largely free to experience. Avoid overpriced sea-view accommodations and focus on authentic local experiences. Our approach: choose ultimate value transportation, select convenient affordable lodging, enjoy local alleyway dining, discover free niche spots, and spend only where it matters. Tested results: under €100 daily for complete enjoyment.\n\n### 2. Transportation savings: Low cost throughout\n\nParis-Honfleur transportation is your first expense. Choosing wisely can save over 50%. Two tested options: Flixbus early bird tickets (book 7-15 days ahead, €12 one-way, 2h30m direct) or train+bus combination (€22 total when booked early). Avoid tourist bus packages (€80+)—independent travel offers better value.\n\nAfter arrival, no local transport needed—the old town is completely walkable under 1km diameter. Walking not only saves money but reveals hidden gems missed by most visitors."
+      "title": "Build your own Honfleur travel budget",
+      "description": "Compare your actual costs before booking.",
+      "content": "List return transport, accommodation if needed, parking, meals and any paid visits separately. Check the operator’s price for your date and party; an old travel article cannot guarantee your total.\n\n## Choose where to spend\n\nDecide which visit matters most, then compare options for the remaining costs. Keep a contingency for changed transport. Do not assume parking is free or that a promotional ticket is available.\n\n[Office de Tourisme de Honfleur](https://www.ot-honfleur.fr/preparez-votre-sejour/pratique/comment-venir/) · [Parkings / Parking](https://www.ville-honfleur.com/vivre-a-honfleur/vie-quotidienne/parkings/)"
     }
-  },
-  "photos": {
-    "title": "Photo Gallery", 
-    "desc": "Explore stunning photos of Honfleur Harbor and its surroundings",
-    "placeholder": "Photo gallery will be implemented here."
   }
 }

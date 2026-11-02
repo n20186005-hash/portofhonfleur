@@ -41,10 +41,10 @@ i18n
       bindI18nStore: 'added removed',
     },
     detection: {
-      order: ["path", "localStorage", "cookie", "navigator", "htmlTag"],
+      order: ["path", "htmlTag"],
       lookupLocalStorage: "i18nextLng",
       lookupFromPathIndex: 0,
-      caches: ["localStorage"],
+      caches: [],
     },
   });
 
