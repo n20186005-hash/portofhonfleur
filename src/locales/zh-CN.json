@@ -134,5 +134,11 @@
     "privacy_description": "了解本独立翁弗勒尔旅行指南如何使用本地偏好设置，以及 Google 地图等第三方内容。",
     "terms_description": "本独立翁弗勒尔旅行指南的使用条件、编辑信息及外部链接说明。",
     "cookies_description": "了解浏览器偏好设置、嵌入式 Google 地图，以及如何在浏览器中管理Cookie。"
+  },
+  "restoredGallery": {
+    "kicker": "图片相册",
+    "title": "图片相册",
+    "desc": "浏览原有图片集。图片来源及拍摄地点尚未核实。",
+    "image": "相册图片 {{number}}"
   }
 }

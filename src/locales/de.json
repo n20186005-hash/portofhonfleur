@@ -98,5 +98,11 @@
   },
   "cookies": {
     "title": "Cookie-Informationen"
+  },
+  "restoredGallery": {
+    "kicker": "FOTOGALERIE",
+    "title": "Fotogalerie",
+    "desc": "Entdecken Sie die ursprüngliche Bildersammlung. Quellen und abgebildete Orte wurden nicht überprüft.",
+    "image": "Galeriebild {{number}}"
   }
 }

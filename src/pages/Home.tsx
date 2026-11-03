@@ -279,9 +279,9 @@ export default function Home() {
       {/* Photos */}
       <section id="photos" className="mx-auto w-full max-w-6xl px-5 py-14 md:px-8">
         <SectionTitle
-          kicker={t("photos.kicker")}
-          title={t("photos.title")}
-          desc={t("photos.desc")}
+          kicker={t("restoredGallery.kicker")}
+          title={t("restoredGallery.title")}
+          desc={t("restoredGallery.desc")}
         />
 
         <a href={GOOGLE_MAPS_PLACE_URL} target="_blank" rel="noreferrer" className="underline">{t("hero.google_maps")}</a>
@@ -294,14 +294,14 @@ export default function Home() {
                     <div className="group relative overflow-hidden rounded-2xl border border-border/70 bg-background">
                       <img
                         src={src}
-                        alt={`${t("photos.title")} ${index + 1}`}
+                        alt={t("restoredGallery.image", { number: index + 1 })}
                         className="h-72 w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
                         loading="lazy"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-background/85 via-transparent to-transparent" />
                       <div className="absolute bottom-3 left-3 right-3 z-10 flex items-end justify-between gap-3">
                         <div className="min-w-0">
-                          <div className="truncate text-sm font-semibold">{`${t("photos.title")} ${index + 1}`}</div>
+                          <div className="truncate text-sm font-semibold">{t("restoredGallery.image", { number: index + 1 })}</div>
                           <div className="mt-1 text-xs text-muted-foreground">
 
                           </div>
