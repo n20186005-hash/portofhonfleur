@@ -102,5 +102,11 @@
   },
   "cookies": {
     "title": "Cookieについて"
+  },
+  "restoredGallery": {
+    "kicker": "フォトギャラリー",
+    "title": "写真ギャラリー",
+    "desc": "以前から掲載されている画像をご覧いただけます。画像の出典と撮影場所は未確認です。",
+    "image": "ギャラリー画像 {{number}}"
   }
 }

@@ -98,5 +98,11 @@
   },
   "cookies": {
     "title": "Cookie說明"
+  },
+  "restoredGallery": {
+    "kicker": "圖片相簿",
+    "title": "圖片相簿",
+    "desc": "瀏覽原有圖片集。圖片來源及拍攝地點尚未核實。",
+    "image": "相簿圖片 {{number}}"
   }
 }

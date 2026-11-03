@@ -125,5 +125,11 @@
     "privacy_description": "How this independent Honfleur guide uses local preferences and third-party content, including Google Maps.",
     "terms_description": "Conditions for using the independent Port of Honfleur guide, editorial information and external links.",
     "cookies_description": "Information about browser preferences, embedded Google Maps content and managing cookies in your browser."
+  },
+  "restoredGallery": {
+    "kicker": "PHOTO GALLERY",
+    "title": "Photo gallery",
+    "desc": "Browse the original image collection. The image sources and locations have not been verified.",
+    "image": "Gallery image {{number}}"
   }
 }
