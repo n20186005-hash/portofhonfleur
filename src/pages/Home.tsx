@@ -16,6 +16,15 @@ import { Helmet } from "react-helmet-async";
 
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+import heroImg from "@/assets/photos/maps-cover.jpg";
+import aerialImg from "@/assets/photos/vieux-bassin-aerial.webp";
+import sailboatsImg from "@/assets/photos/vieux-bassin-sailboats.webp";
+import quayImg from "@/assets/photos/carousel-quay.webp";
+import locksImg from "@/assets/photos/locks-aerial.webp";
+
+const gallery = [heroImg, sailboatsImg, quayImg, aerialImg, locksImg];
+
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 
@@ -62,7 +71,7 @@ export default function Home() {
     const handleLanguageChanged = () => {
       setLanguage(i18n.language);
     };
-    
+
     i18n.on('languageChanged', handleLanguageChanged);
     return () => {
       i18n.off('languageChanged', handleLanguageChanged);
@@ -128,7 +137,7 @@ export default function Home() {
         <div
           className="absolute inset-0 -z-10"
           style={{
-            backgroundImage: "linear-gradient(130deg, #c3d8d1, #e5dbc8)",
+            backgroundImage: `url(${heroImg})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
@@ -267,9 +276,49 @@ export default function Home() {
         </section>
       )}
 
-      <section id="photos" className="mx-auto max-w-6xl px-5 py-12 md:px-8">
+      {/* Photos */}
+      <section id="photos" className="mx-auto w-full max-w-6xl px-5 py-14 md:px-8">
+        <SectionTitle
+          kicker={t("photos.kicker")}
+          title={t("photos.title")}
+          desc={t("photos.desc")}
+        />
+
         <a href={GOOGLE_MAPS_PLACE_URL} target="_blank" rel="noreferrer" className="underline">{t("hero.google_maps")}</a>
+        <div className="mt-8">
+          <Card className="paper-shadow border-border/70 bg-card/75 p-5 md:p-6">
+            <Carousel opts={{ align: "start", loop: true }}>
+              <CarouselContent>
+                {gallery.map((src, index) => (
+                  <CarouselItem key={src} className="md:basis-1/2">
+                    <div className="group relative overflow-hidden rounded-2xl border border-border/70 bg-background">
+                      <img
+                        src={src}
+                        alt={`${t("photos.title")} ${index + 1}`}
+                        className="h-72 w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                        loading="lazy"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-background/85 via-transparent to-transparent" />
+                      <div className="absolute bottom-3 left-3 right-3 z-10 flex items-end justify-between gap-3">
+                        <div className="min-w-0">
+                          <div className="truncate text-sm font-semibold">{`${t("photos.title")} ${index + 1}`}</div>
+                          <div className="mt-1 text-xs text-muted-foreground">
+
+                          </div>
+                        </div>
+                        <Badge className="bg-primary text-primary-foreground">PHOTO</Badge>
+                      </div>
+                    </div>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <CarouselPrevious className="left-0" />
+              <CarouselNext className="right-0" />
+            </Carousel>
+          </Card>
+        </div>
       </section>
+
       <section id="reviews" className="mx-auto max-w-6xl px-5 pb-12 md:px-8">
         <a href={GOOGLE_MAPS_PLACE_URL} target="_blank" rel="noreferrer" className="underline">{t("reviews.cta_button")}</a>
       </section>
